@@ -1,0 +1,39 @@
+.sticky {
+    position: fixed;
+    top: 100px;  /* 스크롤할 때 상단에서 20px 떨어진 곳에 고정 */
+    right: 50px; /* 오른쪽에서 20px 떨어진 곳에 고정 */
+    z-index: 10; /* z-index로 다른 요소와의 우선순위 설정 */
+    align-self: flex-end; /* 상위 요소의 flex 영향에서 벗어남 */
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out, transform 0.3s ease-in-out; /* 애니메이션 속성 추가 */
+}
+
+.circle:hover{
+    background-color: var(--third-color);
+    filter: drop-shadow(0px 4px 48px var(--third-color));
+    color: var(--background-color);
+    transform: scale(1.1) rotate(5deg); /* 이미지를 확대하고 살짝 회전시킴 */
+}
+
+.colorPicker{
+    width: 50px;
+    height: 50px;
+}
+
+.download{
+    margin-bottom: 100px;
+}
+
+.download:hover{
+    transform: scale(1.1) rotate(5deg); /* 이미지를 확대하고 살짝 회전시킴 */
+}
