@@ -16,6 +16,17 @@ import github from '../images/github.png';
 import notion from '../images/notion.png';
 import 'animate.css';
 import '../../../i18n'
+
+//skill marks
+import reactImg from  '../images/react.png';
+import vueImg from  '../images/vue.png';
+import htmlJSCssImg from  '../images/html_js_css.png';
+import typescriptImg from  '../images/typescript.png';
+import unityImg from  '../images/unity.png';
+import nextJSImg from '../images/nextJS.png';
+import mongDBImg from '../images/mongoDB.png';
+
+
 const Projects: React.FC = () => {
   const { t } = useTranslation('common');  // 공통 번역 파일 사용
   const blogPj = 'blogProject';
@@ -42,6 +53,19 @@ const Projects: React.FC = () => {
       };
     }
   }, [i18n]);
+
+  useEffect(() => {
+    setKind(web);
+  }, []);
+
+  useEffect(() => {
+    if (isInitialized) {
+      setKind(web);
+      setProject(blogPj);
+      setSelectedProject(blogPj);
+    }
+  }, [isInitialized, web, blogPj]);
+  
   if (!isInitialized) return null;
   const changeProject = (project: string) => {
     setAnimationClass(''); // 애니메이션 리셋
@@ -154,6 +178,12 @@ const Projects: React.FC = () => {
                 <div className={styles.detailAll}>
 
                   <div className={styles.imgAndName}>
+                    <div className={styles.skills}>
+                      <Image src={reactImg} className={styles.github} alt="react"></Image>
+                      <Image src={typescriptImg} className={styles.github} alt="react"></Image>
+                      <Image src={htmlJSCssImg} className={styles.github} alt="react"></Image>
+                    </div>
+                   
                     <Image src={dashBoard} className={styles.projectDetail} onClick={goToBlog} alt='blog'></Image>
                     <span className={styles.blog} onClick={goToBlog}>MK-Blog</span>
                     <span className={styles.blogDetail}>{t('blogDetail')}</span>
@@ -175,6 +205,11 @@ const Projects: React.FC = () => {
               <div className={styles.detailAll}>
 
               <div className={styles.imgAndName}>
+                <div className={styles.skills}>
+                  <Image src={reactImg} className={styles.github} alt="react"></Image>
+                  <Image src={typescriptImg} className={styles.github} alt="react"></Image>
+                  <Image src={htmlJSCssImg} className={styles.github} alt="react"></Image>
+                </div>
                 <Image src={geuGolImg} className={styles.projectDetail} onClick={goToGeugol}  alt='geugol'></Image>
                 <span className={styles.blog} onClick={goToGeugol}>{t('geugol')}</span>
                 <span className={styles.blogDetail}>{t('geugolDetail')}</span>
@@ -196,6 +231,13 @@ const Projects: React.FC = () => {
              <div className={styles.detailAll}>
 
              <div className={styles.imgAndName}>
+             <div className={styles.skills}>
+                <Image src={reactImg} className={styles.github} alt="react"></Image>
+                <Image src={typescriptImg} className={styles.github} alt="react"></Image>
+                <Image src={htmlJSCssImg} className={styles.github} alt="react"></Image>
+                <Image src={nextJSImg} className={styles.github} alt="react"></Image>
+                <Image src={mongDBImg} className={styles.github} alt="react"></Image>
+              </div>
                <Image src={portFolioImg} className={styles.projectDetail} onClick={goToPortFolio} alt='portFolio'></Image>
                <span className={styles.blog} onClick={goToPortFolio}>{t('portFolio')}</span>
                <span className={styles.blogDetail}>{t('portFolioDetail')}</span>

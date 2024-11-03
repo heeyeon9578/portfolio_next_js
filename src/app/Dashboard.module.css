@@ -4,9 +4,9 @@
     font-weight: 700;
     font-style: normal;
 }
-
 .app {
-    
+    font-family: 'TTLaundryGothicB', sans-serif; /* 기본 폰트 */
+    cursor: pointer;
     margin-top:20px;
     background-color: var(--primary-color);
     width: 95vw;  /* Viewport width의 95% */
@@ -19,7 +19,7 @@
     position: relative; /* 자식 요소의 위치를 지정할 때 필요 */
     overflow: visible; /* overflow 속성 확인 */
     margin-bottom: 20px;
-}
-
+  }
+  
 
 

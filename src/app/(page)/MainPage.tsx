@@ -33,10 +33,10 @@ const MainPage: React.FC<MainPageProps> = ({ scrollTo }) => {
       <div className={styles.btns}>
         <button className={styles.primaryBtn} onClick={()=>scrollTo('profile')}>{t('profile')}</button>
         <button className={styles.primaryBtn} onClick={()=>scrollTo('projects')}>{t('projects')}</button>
-        <button className={styles.primaryBtn} onClick={()=>scrollTo('skill')}>{t('skills')}</button>
         <button className={styles.primaryBtn}>{t('certifications')}</button>
         <button className={styles.primaryBtn}>{t('experience')}</button>
         <button className={styles.primaryBtn}>{t('email')}</button>
+        <button className={styles.primaryBtn}>{t('guestbook')}</button>
       </div>
 
       <Image className={styles.profileImg} src={profileImg} alt="Profile" priority></Image>
@@ -48,7 +48,7 @@ const MainPage: React.FC<MainPageProps> = ({ scrollTo }) => {
         <span className={`${styles.strongFont} animate__animated animate__pulse animate__infinite`} style={{ animationDelay: '0.8s' }}>
           {t('intro_part2')}
         </span>
-        <span className={`${styles.defaultFont} animate__animated animate__tada animate__infinite`} style={{ animationDelay: '1.2s' }}>
+        <span className={`${styles.defaultFont} animate__animated animate__pulse animate__infinite`} style={{ animationDelay: '1.2s' }}>
           {t('intro_part3')}
         </span>
       </div>

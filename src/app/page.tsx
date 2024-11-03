@@ -5,14 +5,14 @@ import MainPage from '../app/(page)/MainPage';
 import Sticky from '../app/(page)/Sticky';
 import Profile from '../app/(page)/Profile'
 import Projects from '../app/(page)/Projects';
-import Skill from '../app/(page)/Skill';
+
 
 const Dashboard: React.FC = () => {
 
  // Profile 컴포넌트에 대한 ref 생성
  const profileRef = useRef<HTMLDivElement>(null);
  const projectRef = useRef<HTMLDivElement>(null);
- const skillRef = useRef<HTMLDivElement>(null);
+ const mainRef = useRef<HTMLDivElement>(null);
 
  // Profile로 스크롤하는 함수
  const scrollTo = (menu: string) => {
@@ -24,13 +24,13 @@ const Dashboard: React.FC = () => {
     projectRef.current.scrollIntoView({ behavior: 'smooth' });
   }
 
-  if ( menu ==='skill' && skillRef.current) {
-    skillRef.current.scrollIntoView({ behavior: 'smooth' });
+  if ( menu ==='main' && mainRef.current) {
+    mainRef.current.scrollIntoView({ behavior: 'smooth' });
   }
  };
   return (
-    <div className={styles.app}>
-      <Sticky></Sticky>
+    <div className={styles.app} ref={mainRef}>
+      <Sticky scrollTo={scrollTo}></Sticky>
       <MainPage scrollTo={scrollTo}></MainPage> 
 
       <div ref={profileRef}>
@@ -41,9 +41,7 @@ const Dashboard: React.FC = () => {
         <Projects />
       </div>
 
-      <div ref={skillRef}>
-        <Skill />
-      </div>
+
 
     </div>
   );

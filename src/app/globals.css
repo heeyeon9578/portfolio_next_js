@@ -42,7 +42,7 @@
 
 .app {
   font-family: 'TTLaundryGothicB', sans-serif; /* 기본 폰트 */
-    cursor: pointer;
+  cursor: pointer;
   margin-top:20px;
   background-color: var(--primary-color);
   width: 95vw;  /* Viewport width의 95% */
@@ -59,3 +59,17 @@
 
 
 
+html, body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'TTLaundryGothicB', sans-serif; /* 'TTLaundryGothicB' 폰트를 기본으로 설정하고, fallback으로 sans-serif 지정 */
+  font-weight: 700; /* @font-face에서 정의한 700 weight 적용 */
+}
+
+button, div, span {
+  font-family: 'TTLaundryGothicB', sans-serif; /* 'TTLaundryGothicB' 폰트를 기본으로 설정하고, fallback으로 sans-serif 지정 */
+  cursor: pointer;
+}

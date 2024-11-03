@@ -10,9 +10,11 @@ import download from '../images/download.png';
 import goUp from '../images/goUp.png'
 import '../../../i18n'
 import { useTranslation } from 'react-i18next';
+interface StickyPageProps {
+  scrollTo: (menu:string) => void;  // 프로필로 스크롤하기 위한 함수 prop
+}
 
-
-const Sticky: React.FC = () => {
+const Sticky: React.FC<StickyPageProps> = ({ scrollTo }) => {
 
   const { i18n } = useTranslation('common');
 
@@ -82,7 +84,7 @@ const Sticky: React.FC = () => {
         <div className={styles.download} onClick={downloadResume}>
           <Image src={download} className={styles.colorPicker} alt='download'></Image>
         </div>
-        <div className={styles.download}>
+        <div className={styles.download} onClick={()=>scrollTo('main')}>
           <Image src={goUp} className={styles.colorPicker} alt='goUp'></Image>
         </div>
       </div>
