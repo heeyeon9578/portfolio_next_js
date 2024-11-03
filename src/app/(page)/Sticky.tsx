@@ -17,13 +17,19 @@ const Sticky: React.FC = () => {
   const { i18n } = useTranslation('common');
 
   const [isInitialized, setIsInitialized] = useState(false);
+  
   useEffect(() => {
     if (i18n.isInitialized) {
       setIsInitialized(true);
     } else {
-      i18n.on('initialized', () => setIsInitialized(true));
+      const handleInitialized = () => setIsInitialized(true);
+      i18n.on('initialized', handleInitialized);
+      return () => {
+        i18n.off('initialized', handleInitialized);
+      };
     }
   }, [i18n]);
+
   if (!isInitialized) return null;
   // 언어 전환 함수
   const toggleLanguage = () => {

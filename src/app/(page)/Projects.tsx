@@ -35,7 +35,11 @@ const Projects: React.FC = () => {
     if (i18n.isInitialized) {
       setIsInitialized(true);
     } else {
-      i18n.on('initialized', () => setIsInitialized(true));
+      const handleInitialized = () => setIsInitialized(true);
+      i18n.on('initialized', handleInitialized);
+      return () => {
+        i18n.off('initialized', handleInitialized);
+      };
     }
   }, [i18n]);
   if (!isInitialized) return null;
@@ -140,7 +144,7 @@ const Projects: React.FC = () => {
               <Image src={geugol} alt='geugol-project' className={styles.projectImg}></Image>
             </div>
             <div className={`${styles.project} ${selectedProject === portFolio ? styles.active : ''}`} onClick={()=>changeProject(portFolio)}>
-              <Image src={profileImg} alt='profileImg-project' className={styles.projectImg}></Image>
+              <Image src={profileImg} alt='profileImg-project' className={styles.projectImg} priority></Image>
             </div>            
           </div>
 

@@ -10,14 +10,17 @@ import '../../../i18n'
 
 const Profile: React.FC = () => {
   
-  const { t } = useTranslation('common');  // 공통 번역 파일 사용
-  const { i18n } = useTranslation('common');
+  const { t ,i18n} = useTranslation('common');  // 공통 번역 파일 사용
   const [isInitialized, setIsInitialized] = useState(false);
   useEffect(() => {
     if (i18n.isInitialized) {
       setIsInitialized(true);
     } else {
-      i18n.on('initialized', () => setIsInitialized(true));
+      const handleInitialized = () => setIsInitialized(true);
+      i18n.on('initialized', handleInitialized);
+      return () => {
+        i18n.off('initialized', handleInitialized);
+      };
     }
   }, [i18n]);
   if (!isInitialized) return null;
@@ -26,12 +29,12 @@ const Profile: React.FC = () => {
 
         <div>
            <div className={styles.defaultFont}>{t('profile')}</div>
-           <Image src={devider} className={styles.devider} alt='devider'></Image>
+           <Image src={devider} className={styles.devider} alt='devider' ></Image>
         </div>
 
         <div className={styles.imgAndParagraph}>
             <div className={styles.myImg}>
-                <Image src={heeyeon} alt="Profile"></Image>
+                <Image src={heeyeon} alt="Profile" priority></Image>
             </div>
             <div className={styles.paragraph}>
                 <span className={`${styles.sentence} animate__animated animate__fadeIn`}>{t('profile_sentence_1')}</span>

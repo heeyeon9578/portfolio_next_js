@@ -12,27 +12,21 @@ interface MainPageProps {
 }
 
 const MainPage: React.FC<MainPageProps> = ({ scrollTo }) => {
-  const { t } = useTranslation('common');
-  const { i18n } = useTranslation('common');
+
+  const { t,i18n } = useTranslation('common');
   const [isInitialized, setIsInitialized] = useState(false);
   useEffect(() => {
     if (i18n.isInitialized) {
       setIsInitialized(true);
     } else {
-      i18n.on('initialized', () => setIsInitialized(true));
+      const handleInitialized = () => setIsInitialized(true);
+      i18n.on('initialized', handleInitialized);
+      return () => {
+        i18n.off('initialized', handleInitialized);
+      };
     }
   }, [i18n]);
   if (!isInitialized) return null;
-  console.log(`
-    
-    
-    
-   i18n.isInitialized
-    
-    
-    
-    
-    `,i18n.isInitialized )
 
   return (
     <div className={styles.mainPage}>
@@ -45,7 +39,7 @@ const MainPage: React.FC<MainPageProps> = ({ scrollTo }) => {
         <button className={styles.primaryBtn}>{t('email')}</button>
       </div>
 
-      <Image className={styles.profileImg} src={profileImg} alt="Profile"></Image>
+      <Image className={styles.profileImg} src={profileImg} alt="Profile" priority></Image>
       
       <div className={styles.profileText}>
         <span className={`${styles.defaultFont} animate__animated animate__pulse animate__infinite`} style={{ animationDelay: '0.4s' }}>

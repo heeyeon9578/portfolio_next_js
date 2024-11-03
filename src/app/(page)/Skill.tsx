@@ -5,8 +5,8 @@ import styles from './Skill.module.css';  // CSS Modules import
 import { useTranslation } from 'react-i18next';
 import devider from '../images/devider.png';
 import '../../../i18n'
-import blogProject from '../images/blogProject.png';
-import profileImg from '../images/profileImg.png';
+
+
 
 //skill marks
 import reactImg from  '../images/react.png';
@@ -28,7 +28,7 @@ import notion from '../images/notion.png';
 import 'animate.css';
 
 const Skill: React.FC = () => {
-  const { t } = useTranslation('common');  // 공통 번역 파일 사용
+  const { t,i18n } = useTranslation('common');  // 공통 번역 파일 사용
   const blogPj = 'blogProject';
   const geugolPj = 'geugol';
   const portFolio = 'portFolio';
@@ -45,15 +45,20 @@ const Skill: React.FC = () => {
   const [kind, setKind] = useState(reactSkill);
   const [selectedProject, setSelectedProject] = useState(blogPj); // 클릭된 프로젝트 상태 관리
   const [animationClass, setAnimationClass] = useState('animate__fadeIn');
-  const { i18n } = useTranslation('common');
   const [isInitialized, setIsInitialized] = useState(false);
+
   useEffect(() => {
     if (i18n.isInitialized) {
       setIsInitialized(true);
     } else {
-      i18n.on('initialized', () => setIsInitialized(true));
+      const handleInitialized = () => setIsInitialized(true);
+      i18n.on('initialized', handleInitialized);
+      return () => {
+        i18n.off('initialized', handleInitialized);
+      };
     }
   }, [i18n]);
+  
   if (!isInitialized) return null;
   const changeProject = (project: string) => {
     setAnimationClass(''); // 애니메이션 리셋
