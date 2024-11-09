@@ -32,21 +32,25 @@ const Dashboard: React.FC = () => {
  };
   return (
     <div className={styles.app} ref={mainRef}>
+     
       <Sticky scrollTo={scrollTo}></Sticky>
-      <MainPage scrollTo={scrollTo}></MainPage> 
+      <div className={styles.main}>
+        <MainPage scrollTo={scrollTo}></MainPage> 
 
-      <div ref={profileRef}>
-        <Profile />
+        <div ref={profileRef}>
+          <Profile />
+        </div>
+
+        <div ref={projectRef}>
+          <Projects />
+        </div>
+
+        <div ref={certRef}>
+          <Certification />
+        </div>
+
       </div>
-
-      <div ref={projectRef}>
-        <Projects />
-      </div>
-
-      <div ref={certRef}>
-        <Certification />
-      </div>
-
+     
 
     </div>
   );

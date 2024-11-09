@@ -67,3 +67,163 @@
     font-size: 40px;
     color: var(--third-color);
 }
+
+@media (max-width:1191px) {
+    .primaryBtn{
+        margin-top: 10px;
+        margin-right: 30px;  /* 각 버튼 사이에 10px의 간격을 추가 */
+        width: auto;
+        padding: 10px 20px;
+        height: 40px;
+        background-color:var(--secondary-color);
+        border: none;
+        border-radius:20px;
+        color: var(--text-color);
+        filter: drop-shadow(0px 4px 48px var(--secondary-color));
+        font-size: 15px; 
+        transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
+    }
+    .profileImg{
+        margin-top: 70px;
+        width: 300px;
+        height: 300px;
+        filter: drop-shadow(0px 4px 48px var(--secondary-color));
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
+    
+    }
+}
+
+@media (max-width:815px) {
+    .primaryBtn{
+        margin-top: 10px;
+        margin-right: 20px;  /* 각 버튼 사이에 10px의 간격을 추가 */
+        width: auto;
+        padding: 10px 13px;
+        height: 30px;
+        background-color:var(--secondary-color);
+        border: none;
+        border-radius:20px;
+        color: var(--text-color);
+        filter: drop-shadow(0px 4px 48px var(--secondary-color));
+        font-size: 12px; 
+        transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
+    }
+    .defaultFont{
+        font-size: 30px;
+    }
+    
+    .strongFont{
+        font-size:30px;
+        color: var(--third-color);
+    }
+    
+}
+@media (max-width:576px) {
+    .primaryBtn{
+        margin-top: 10px;
+        margin-right: 20px;  /* 각 버튼 사이에 10px의 간격을 추가 */
+        width: auto;
+        padding: 10px 10px;
+        height: 25px;
+        background-color:var(--secondary-color);
+        border: none;
+        border-radius:20px;
+        color: var(--text-color);
+        filter: drop-shadow(0px 4px 48px var(--secondary-color));
+        font-size: 10px; 
+        transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
+    }
+    .defaultFont{
+        font-size: 20px;
+    }
+    
+    .strongFont{
+        font-size:20px;
+        color: var(--third-color);
+    }
+    .profileImg{
+        margin-top: 70px;
+        width: 200px;
+        height: 200px;
+        filter: drop-shadow(0px 4px 48px var(--secondary-color));
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
+    
+    }
+    .mainPage{
+
+        margin-bottom: 200px;
+    }
+}
+@media (max-width:473px) {
+    .primaryBtn{
+        margin-top: 10px;
+        margin-right: 10px;  /* 각 버튼 사이에 10px의 간격을 추가 */
+        width: auto;
+        padding: 5px 5px;
+        height: 25px;
+        background-color:var(--secondary-color);
+        border: none;
+        border-radius:20px;
+        color: var(--text-color);
+        filter: drop-shadow(0px 4px 48px var(--secondary-color));
+        font-size: 10px; 
+        transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
+    }
+    .defaultFont{
+        font-size: 20px;
+    }
+    
+    .strongFont{
+        font-size:20px;
+        color: var(--third-color);
+    }
+    .profileImg{
+        margin-top: 70px;
+        width: 200px;
+        height: 200px;
+        filter: drop-shadow(0px 4px 48px var(--secondary-color));
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
+    
+    }
+    .mainPage{
+
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width:330px) {
+    .primaryBtn{
+        margin-top: 10px;
+        margin-right: 5px;  /* 각 버튼 사이에 10px의 간격을 추가 */
+        width: auto;
+        padding: 5px 5px;
+        height: 20px;
+        background-color:var(--secondary-color);
+        border: none;
+        border-radius:20px;
+        color: var(--text-color);
+        filter: drop-shadow(0px 4px 48px var(--secondary-color));
+        font-size: 8px; 
+        transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
+    }
+    .defaultFont{
+        font-size: 20px;
+    }
+    
+    .strongFont{
+        font-size:20px;
+        color: var(--third-color);
+    }
+    .profileImg{
+        margin-top: 70px;
+        width: 150px;
+        height: 150px;
+        filter: drop-shadow(0px 4px 48px var(--secondary-color));
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
+    
+    }
+    .mainPage{
+
+        margin-bottom: 200px;
+    }
+}

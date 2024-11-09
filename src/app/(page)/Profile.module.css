@@ -15,9 +15,24 @@
     font-size: 40px;
 }
 
+.profileImgStyle{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.paragraphStyle{
+    
+    /* width: 100%; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .myImg{
-    max-width: 300px;
-    max-height: 380px;
+    max-width: 500px;
+    max-height: 480px;
     border: 4px solid var(--secondary-color);
     filter: drop-shadow(0px 4px 48px var(--secondary-color));
     border-radius: 23px;
@@ -38,13 +53,16 @@
 }
 
 .imgAndParagraph{
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top:20px ;
 }
 
+
 .paragraph{
+    
     width: 100%;
     max-width: 600px;
     display: flex;
@@ -53,4 +71,51 @@
 
 .sentence{
     margin-bottom: 20px;
+}
+
+@media (max-width:1191px) {
+    .devider{
+        width: 90%;
+        height: 4px;
+    }
+}
+
+@media (max-width:815px) {
+    .devider{
+        width: 100%;
+        height: 4px;
+    }
+    .defaultFont{
+        font-size: 30px;
+    }
+    .imgAndParagraph{
+       
+        flex-direction: column;
+      
+    }
+    .paragraph{
+    
+       margin-top: 20px;
+    }
+    .profilePage{
+       
+        margin-bottom: 300px;
+       
+    }
+    
+}
+
+
+@media (max-width:575px) {
+    .defaultFont{
+        font-size: 20px;
+    }
+    .sentence{
+        font-size: 12px;
+    }
+    .profilePage{
+       
+        margin-bottom: 200px;
+       
+    }
 }

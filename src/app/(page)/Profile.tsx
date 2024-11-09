@@ -33,9 +33,14 @@ const Profile: React.FC = () => {
         </div>
 
         <div className={styles.imgAndParagraph}>
+
+          <div className={styles.profileImgStyle}>
             <div className={styles.myImg}>
                 <Image src={heeyeon} alt="Profile" priority></Image>
             </div>
+          </div>
+            
+          <div className={styles.paragraphStyle}>
             <div className={styles.paragraph}>
                 <span className={`${styles.sentence} animate__animated animate__fadeIn`}>{t('profile_sentence_1')}</span>
                 <span className={`${styles.sentence} animate__animated animate__fadeIn`}>{t('profile_sentence_2')}</span>
@@ -43,6 +48,7 @@ const Profile: React.FC = () => {
                 <span className={`${styles.sentence} animate__animated animate__fadeIn`}>{t('profile_sentence_4')}</span>
                 <span className={`${styles.sentence} animate__animated animate__fadeIn`}>{t('profile_sentence_5')}</span>
             </div>
+          </div>
         </div>
         
 

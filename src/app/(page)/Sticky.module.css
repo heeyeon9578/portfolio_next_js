@@ -37,3 +37,57 @@
 .download:hover{
     transform: scale(1.1) rotate(5deg); /* 이미지를 확대하고 살짝 회전시킴 */
 }
+
+@media (max-width:1191px) {
+    .circle{
+        width: 40px;
+        height: 40px;
+     
+    }
+
+    .colorPicker{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+@media (max-width:815px) {
+    .circle{
+        width: 30px;
+        height: 30px;
+     
+    }
+
+    .colorPicker{
+        width: 30px;
+        height: 30px;
+    }
+    .sticky {
+        top: 130px; 
+        right: 20px; /* 오른쪽에서 20px 떨어진 곳에 고정 */
+    
+    }
+    
+}
+@media (max-width:575px) {
+    .sticky {
+     
+        right: 10px; /* 오른쪽에서 20px 떨어진 곳에 고정 */
+     
+    }
+}
+
+@media (max-width:375px) {
+    .circle{
+        width: 20px;
+        height: 20px;  
+        font-size: 10px;
+     
+    }
+
+    .colorPicker{
+        width: 20px;
+        height: 20px;
+    }
+}
