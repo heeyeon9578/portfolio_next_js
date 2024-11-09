@@ -5,13 +5,13 @@ import MainPage from '../app/(page)/MainPage';
 import Sticky from '../app/(page)/Sticky';
 import Profile from '../app/(page)/Profile'
 import Projects from '../app/(page)/Projects';
-
-
+import Certification from '../app/(page)/Certification';
 const Dashboard: React.FC = () => {
 
  // Profile 컴포넌트에 대한 ref 생성
  const profileRef = useRef<HTMLDivElement>(null);
  const projectRef = useRef<HTMLDivElement>(null);
+ const certRef = useRef<HTMLDivElement>(null);
  const mainRef = useRef<HTMLDivElement>(null);
 
  // Profile로 스크롤하는 함수
@@ -23,7 +23,9 @@ const Dashboard: React.FC = () => {
    if ( menu ==='projects' &&projectRef.current) {
     projectRef.current.scrollIntoView({ behavior: 'smooth' });
   }
-
+  if ( menu ==='certification' &&certRef.current) {
+    certRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
   if ( menu ==='main' && mainRef.current) {
     mainRef.current.scrollIntoView({ behavior: 'smooth' });
   }
@@ -41,6 +43,9 @@ const Dashboard: React.FC = () => {
         <Projects />
       </div>
 
+      <div ref={certRef}>
+        <Certification />
+      </div>
 
 
     </div>

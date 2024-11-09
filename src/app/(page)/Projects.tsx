@@ -25,7 +25,7 @@ import typescriptImg from  '../images/typescript.png';
 import unityImg from  '../images/unity.png';
 import nextJSImg from '../images/nextJS.png';
 import mongDBImg from '../images/mongoDB.png';
-
+import cSharpImg from '../images/csharp.png';
 
 const Projects: React.FC = () => {
   const { t } = useTranslation('common');  // 공통 번역 파일 사용
@@ -231,7 +231,7 @@ const Projects: React.FC = () => {
              <div className={styles.detailAll}>
 
              <div className={styles.imgAndName}>
-             <div className={styles.skills}>
+              <div className={styles.skills}>
                 <Image src={reactImg} className={styles.github} alt="react"></Image>
                 <Image src={typescriptImg} className={styles.github} alt="react"></Image>
                 <Image src={htmlJSCssImg} className={styles.github} alt="react"></Image>
@@ -274,6 +274,10 @@ const Projects: React.FC = () => {
                 <div className={styles.detailAll}>
 
                   <div className={styles.imgAndName}>
+                    <div className={styles.skills}>
+                      <Image src={unityImg} className={styles.github} alt="react"></Image>
+                      <Image src={cSharpImg} className={styles.github} alt="react"></Image>
+                    </div>
                     <Image src={helloGachonImg} className={styles.projectDetail} alt='helloGachon'></Image>
                     <span className={styles.blog} >{helloGachon}</span>
                     <span className={styles.blogDetail}>{t('helloGachonDetail')}</span>
