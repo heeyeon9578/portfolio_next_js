@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React,{useState, useEffect} from 'react';
 import styles from './Projects.module.css';  // CSS Modules import
 import { useTranslation } from 'react-i18next';
-import devider from '../images/devider.png';
+import Devider from '../(component)/Devider';
 import blogProject from '../images/blogProject.png';
 import profileImg from '../images/profileImg.png';
 import geugol from '../images/geugol.png';
@@ -150,7 +150,11 @@ const Projects: React.FC = () => {
 
         <div>
            <div className={styles.defaultFont}>{t('projects')}</div>
-           <Image src={devider} className={styles.devider} alt='devider'></Image>
+           <Devider 
+           startColor="#F2BED1" 
+           endColor="#8C6E79" 
+           width={1650} 
+           height={5} />
         </div>
 
         <div className={styles.buttons}>

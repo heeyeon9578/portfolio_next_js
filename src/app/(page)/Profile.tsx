@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React,{useState,useEffect} from 'react';
 import styles from './Profile.module.css';  // CSS Modules import
 import { useTranslation } from 'react-i18next';
-import devider from '../images/devider.png';
+import Devider from '../(component)/Devider';
 import heeyeon from '../images/heeyeon.jpg'
 import 'animate.css';
 import '../../../i18n'
@@ -29,7 +29,11 @@ const Profile: React.FC = () => {
 
         <div>
            <div className={styles.defaultFont}>{t('profile')}</div>
-           <Image src={devider} className={styles.devider} alt='devider' ></Image>
+           <Devider 
+           startColor="#F2BED1" 
+           endColor="#8C6E79" 
+           width={1650} 
+           height={5} />
         </div>
 
         <div className={styles.imgAndParagraph}>

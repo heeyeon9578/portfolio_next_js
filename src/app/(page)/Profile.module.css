@@ -19,7 +19,7 @@
     width: 30%;
     display: flex;
     justify-content: center;
-    margin-right: 15px;
+    margin-right: 20px;
     align-items: center;
 }
 
@@ -30,21 +30,21 @@
     justify-content: flex-start;
     align-items: center;
 }
-.myImg{
-    max-width: 500px;
-    max-height: 480px;
+.myImg {
+    width: 100%; /* 부모 컨테이너 너비를 기준으로 크기 설정 */
+    max-width: 300px; /* 최대 너비 제한 */
+    aspect-ratio: 4 / 5; /* 4:5 비율 설정 */
     border: 4px solid var(--secondary-color);
     filter: drop-shadow(0px 4px 48px var(--secondary-color));
     border-radius: 23px;
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
-    overflow: hidden; /* 이미지가 컨테이너를 넘치지 않도록 설정 */
-
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .myImg img {
     width: 100%;
     height: 100%;
-    object-fit: fill; /* 이미지가 컨테이너 크기에 맞게 잘리거나 늘어날 수 있게 설정 */
+    object-fit:cover; /* 이미지가 컨테이너 크기에 맞게 잘리거나 늘어날 수 있게 설정 */
 }
 
 .myImg:hover{
