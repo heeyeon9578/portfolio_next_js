@@ -62,6 +62,11 @@
     margin-top: 15px;
     font-size: 15px;
 }
+.blogDetail2{
+    max-width: 80%;
+    margin-top: 15px;
+    font-size: 15px;
+}
 .gitAndNotion{
     display: flex;
     align-items: center;
@@ -151,6 +156,19 @@
     overflow: hidden;
 
 }
+.arrowButton {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 72%;
+    right: 3%;
+  }
 @media(max-width:1128px){
     .detail{
         width: 250px;
@@ -182,6 +200,10 @@
         max-width: 90%;
         font-size: 12px;
         margin-top: 15px;
+    }
+    .blogDetail2{
+   
+        font-size: 12px;
     }
     .gitAndNotion{
         display: flex;
@@ -227,6 +249,10 @@
         
         left: 38%;
     }
+    .arrowButton {
+        top: 75%
+    
+      }
 }
 @media (max-width:925px) {
     .defaultFont {
@@ -323,6 +349,21 @@
         
         left: 38%;
     }
+    .arrowButton {
+        background-color: var(--secondary-color);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0%;
+        top:96%;
+        right: 21%;
+        transform: rotate(90deg); /* 90도 회전 */
+      }
 }
 @media (max-width:725px) {
     .defaultFont {
@@ -377,6 +418,10 @@
     .blogDetail{
         display: none;
     }
+    .blogDetail2{
+
+        font-size: 10px;
+    }
     .gitAndNotion{
         display: flex;
         align-items: center;
@@ -420,6 +465,10 @@
         bottom:60px;
         left: 35%;
     }
+    .arrowButton {
+       right: 20%
+    
+      }
 }
 @media (max-width:575px) {
     .defaultFont {
@@ -475,6 +524,10 @@
     .blogDetail{
         display: none;
     }
+    .blogDetail2{
+        max-width: 90%;
+        font-size: 8px;
+    }
     .gitAndNotion{
         display: flex;
         align-items: center;
@@ -518,6 +571,16 @@
         bottom:5%;
         left: 35%;
     }
+    .arrowButton {
+        background-color: var(--secondary-color);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    
+      }
 }
 
 @media (max-width:425px) {
@@ -557,6 +620,10 @@
     }
     .blogDetail{
         display: none;
+    }
+    .blogDetail2{
+        max-width: 90%;
+        font-size: 6px;
     }
     .gitAndNotion{
         display: flex;
@@ -652,7 +719,7 @@
      
     .blog{
  
-        font-size: 10px;
+        font-size: 8px;
         font-weight: bold;
     }
     .blogDetail{
@@ -701,4 +768,16 @@
         
         left: 32%;
     }
+    .arrowButton {
+        background-color: var(--secondary-color);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        top:90%;
+    
+      }
+
 }

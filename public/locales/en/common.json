@@ -25,7 +25,10 @@
     "career":"Career",
     "company1":"b2en",
     "company2":"Jenosoft",
-    "GyoJung": "Integrated Control System for the Ministry of Justice Correctional Bureau",
-    "GyoJungDetail": "This is a web service designed for the Ministry of Justice Correctional Bureau. It retrieves real-time location and transportation information from the server, displays it on a map, and allows route setting.",
-    "maskRcnn": "First-person perspective pedestrian video data from the https://aihub.or.kr/ site was utilized. Using this data, semantic segmentation tasks were performed."
+    "GyoJung": "Integrated Control System for the Ministry of Justice",
+    "GyoJungDetail": "It retrieves real-time location and transportation information from the server, displays it on a map.",
+    "maskRcnn": "Using First-person perspective pedestrian video data, semantic segmentation tasks were performed.",
+    "CMS": "Customer Management System (CMS)",
+    "CMSDetail": "A web service by Jenos Soft designed to manage client companies, delivery information, and products. It records information about products delivered by Jenos Soft and tracks how and where these products are used by client companies. It also provides role-based management by assigning distinct permissions to client companies, Jenos Soft engineers, and partner companies.",
+    "TliveGCS": "Developed a notification feature for the T live GCS product that sends messages with images to administrators or workers when AI detects a fire. Additionally, implemented a drone log feature to systematically view and manage drone activity logs."
   }

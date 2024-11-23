@@ -29,13 +29,19 @@ import pythonImg from  '../images/python.png';
 const Career: React.FC = () => {
     const maskRcnn = "maskRcnn";
     const GyoJung  = "GyoJung";
+    const CMS  = "CMS";
+    const TLiveGCS  = "TLiveGCS";
+
     const { t ,i18n} = useTranslation('common');  // 공통 번역 파일 사용
     const [isInitialized, setIsInitialized] = useState(false);
     const [animationClass, setAnimationClass] = useState('animate__fadeIn');
     const [project, setProject] = useState(maskRcnn); //비투엔
     const [project2, setProject2] = useState(GyoJung); //제노소프트
-
-
+    const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+// 프로젝트 배열
+const projects = [
+  GyoJung, CMS, TLiveGCS
+];
 
   useEffect(() => {
     if (i18n.isInitialized) {
@@ -82,11 +88,25 @@ const Career: React.FC = () => {
           case GyoJung :
             window.open(`http://116.124.172.134:9092/login`, '_blank');
             break;
+            case TLiveGCS :
+              window.open(`https://www.tlivecaster.com/#/product/video_monitoring`, '_blank');
+              break;
           default:
             window.open(`http://heeyeon9578.notion.site/`, '_blank');
             break;
         }
       };
+  // 현재 표시 중인 프로젝트
+  const currentProject = projects[currentProjectIndex];
+      
+  // 프로젝트 변경 핸들러
+  const nextProject = () => {
+      setCurrentProjectIndex((prevIndex) => (prevIndex + 1) % projects.length);
+  };
+ 
+  const prevProject = () => {
+      setCurrentProjectIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
+  };
 
   return (
     <div className={styles.profilePage}>
@@ -158,7 +178,9 @@ const Career: React.FC = () => {
                 <div className={styles.yearText3}>{'23.03  '+t('company2')}</div>
 
                 <div className={`${styles.detail2} animate__animated ${animationClass}`}>
-                    <div className={styles.detailAll}>
+                   {
+                    currentProject === GyoJung &&(
+                        <div className={styles.detailAll}>
 
                         <div className={styles.imgAndName}>
                           <div className={styles.skills}>
@@ -179,7 +201,52 @@ const Career: React.FC = () => {
                         </div>
 
                     </div>
+                    )
+                   }
+
+{
+                    currentProject === CMS &&(
+                        <div className={styles.detailAll}>
+
+                        <div className={styles.imgAndName}>
+                          <div className={styles.skills}>
+                            <Image src={vueImg} className={styles.github} alt="vue"></Image>
+                            <Image src={htmlJSCssImg} className={styles.github} alt="htmlJsCss"></Image>
+                          </div>
+
+                          <span className={styles.blog} >{t('CMS')}</span>
+                          <span className={styles.blogDetail2}>{t('CMSDetail')}</span>
+                        </div>
+
+                      
+
+                    </div>
+                    )
+                   }
+
+{
+                    currentProject === TLiveGCS &&(
+                        <div className={styles.detailAll}>
+
+                        <div className={styles.imgAndName} onClick={()=>{goToSite(project2)}}>
+                          <div className={styles.skills}>
+                            <Image src={cSharpImg} className={styles.github} alt="cSharpImg"></Image>
+                          
+                          </div>
+
+                          <span className={styles.blog} >T live GCS</span>
+                          <span className={styles.blogDetail2}>{t('TliveGCS')}</span>
+                        </div>
+
+                    </div>
+                    )
+                   }
+                  
                 </div>
+                 {/* 오른쪽 버튼 */}
+                 <button className={styles.arrowButton} onClick={nextProject}>
+                    &gt;
+                  </button>
                 <div className={styles.yearText4}>24.07</div>
             </div>
         </div>
