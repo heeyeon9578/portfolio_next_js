@@ -1,0 +1,704 @@
+.profilePage{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 500px;
+   
+}
+
+.defaultFont{
+    font-size: 40px;
+}
+
+.career{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* 기본 스타일 */
+.year {
+    width: 3%; /* 너비를 화면의 3%로 설정 */
+    height: 128vh; /* 높이를 뷰포트 높이에 기반 */
+    margin-top: 20px;
+  }
+  
+  .smallYear {
+    width: 10%; /* 너비를 화면의 10%로 설정 */
+    height: 50vh; /* 높이를 뷰포트 높이에 기반 */
+    position: absolute;
+    top: 9%;
+  }
+  
+  .smallYear2 {
+    width: 10%; /* 너비를 화면의 10%로 설정 */
+    height: 50vh; /* 높이를 뷰포트 높이에 기반 */
+    position: absolute;
+    top: 55%;
+  }
+
+  .detailAll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.imgAndName{
+    display: flex; 
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    align-content: center;
+}
+.blog{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.blogDetail{
+    max-width: 80%;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.gitAndNotion{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.github{
+    width: auto;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.skills{
+    margin-top: 10px;
+}
+
+.projects{
+    padding: 100px;
+}
+
+.detail{
+    width: 300px;
+    height: 413px;
+    background-color: var(--background-color);
+    border: 7px solid var(--secondary-color);
+    box-shadow: 0px 4px 48px var(--secondary-color);
+    border-radius: 23px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:9%;
+    left: 10%;
+
+
+}
+.detail2{
+    width: 300px;
+    height: 413px;
+    background-color: var(--background-color);
+    border: 7px solid var(--secondary-color);
+    box-shadow: 0px 4px 48px var(--secondary-color);
+    border-radius: 23px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:7%;
+    right: 10%;
+
+
+}
+.yearText{
+    font-size: 30px;
+    position: absolute;
+    top:7%;
+    right: 34%;
+    
+}
+.yearText2{
+    font-size: 30px;
+    position: absolute;
+    top:46%;
+    right: 39%;
+}
+.yearText3{
+    font-size: 30px;
+    position: absolute;
+    bottom: 43%;
+    
+    left: 32%;
+}
+.yearText4{
+    font-size: 30px;
+    position: absolute;
+    bottom:60px;
+    
+    left: 40%;
+}
+
+.projectDetail{
+    margin-top: 10px;
+    width: 250px;
+    height: 150px;
+    border: 3px solid var(--secondary-color);
+    overflow: hidden;
+
+}
+@media(max-width:1128px){
+    .detail{
+        width: 250px;
+        height: 333px;
+       
+    }
+    .detail2{
+        width: 250px;
+        height: 333px;
+      
+    
+    }
+    .projectDetail{
+        margin-top: 10px;
+        width: 200px;
+        height: 130px;
+        border: 3px solid var(--secondary-color);
+        overflow: hidden;
+    
+    }
+    
+     
+    .blog{
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .blogDetail{
+        max-width: 90%;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .gitAndNotion{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+    
+    .github{
+        width: auto;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .skills{
+        margin-top: 10px;
+    }
+    .profilePage{
+      
+        margin-bottom: 200px;
+       
+    }
+    .yearText{
+        font-size: 20px;
+        top:7%;
+        right: 29%;
+        
+    }
+    .yearText2{
+        font-size: 20px;
+        top:46%;
+        right: 39%;
+    }
+    .yearText3{
+        font-size: 20px;
+        bottom: 43%;
+        
+        left: 28%;
+    }
+    .yearText4{
+        font-size: 20px;
+        bottom:60px;
+        
+        left: 38%;
+    }
+}
+@media (max-width:925px) {
+    .defaultFont {
+        font-size: 30px;
+    }
+    .year {
+        width: 5%; /* 좁은 화면에서는 더 넓게 */
+        height: 76vh;
+      }
+    
+    .smallYear {
+      width: 20%;
+      height: 30vh;
+      top: 60px;
+    }
+
+    .smallYear2 {
+        width: 20%;
+        height: 30vh;
+        top: 360px;
+    }
+
+    .detail{
+        width: 200px;
+        height: 250px;
+       
+       
+    }
+    .detail2{
+        width: 200px;
+        height: 250px;
+        
+    
+    }
+    .projectDetail{
+        margin-top: 10px;
+        width: 150px;
+        height: 100px;
+        border: 3px solid var(--secondary-color);
+        overflow: hidden;
+    
+    }
+    
+     
+    .blog{
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .blogDetail{
+        display: none;
+    }
+    .gitAndNotion{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+    
+    .github{
+        width: auto;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .skills{
+        margin-top: 10px;
+    }
+    .profilePage{
+      
+        margin-bottom: 200px;
+       
+    }
+    .yearText{
+        font-size: 20px;
+        top:7%;
+        right: 29%;
+        
+    }
+    .yearText2{
+        font-size: 20px;
+        top:46%;
+        right: 39%;
+    }
+    .yearText3{
+        font-size: 20px;
+        bottom: 43%;
+        
+        left: 25%;
+    }
+    .yearText4{
+        font-size: 20px;
+        bottom:60px;
+        
+        left: 38%;
+    }
+}
+@media (max-width:725px) {
+    .defaultFont {
+        font-size: 30px;
+    }
+    .year {
+        width: 5%; /* 좁은 화면에서는 더 넓게 */
+        height: 76vh;
+      }
+    
+    .smallYear {
+      width: 20%;
+      height: 30vh;
+      top: 60px;
+    }
+
+    .smallYear2 {
+        width: 20%;
+        height: 30vh;
+        top: 360px;
+    }
+
+    .detail{
+        width: 150px;
+        height: 190px;
+        border: 4px solid var(--secondary-color);
+        border-radius: 20px;
+       
+    }
+    .detail2{
+        width: 150px;
+        height: 190px;
+        border: 4px solid var(--secondary-color);
+        border-radius: 20px;
+    
+    }
+    .projectDetail{
+        margin-top: 10px;
+        width: 120px;
+        height: 80px;
+        border: 3px solid var(--secondary-color);
+        overflow: hidden;
+    
+    }
+    
+     
+    .blog{
+        margin-top: 5px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .blogDetail{
+        display: none;
+    }
+    .gitAndNotion{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+    
+    .github{
+        width: auto;
+        height: 20px;
+        margin-right: 10px;
+    }
+    
+    .skills{
+        margin-top: 10px;
+    }
+    .profilePage{
+      
+        margin-bottom: 200px;
+       
+    }
+    .yearText{
+        font-size: 15px;
+        top:7%;
+        right: 25%;
+        
+    }
+    .yearText2{
+        font-size: 15px;
+        top:46%;
+        right: 35%;
+    }
+    .yearText3{
+        font-size: 15px;
+        bottom: 43%;
+        
+        left: 22%;
+    }
+    .yearText4{
+        font-size: 15px;
+        bottom:60px;
+        left: 35%;
+    }
+}
+@media (max-width:575px) {
+    .defaultFont {
+        font-size: 20px;
+    }
+
+    .year {
+        width: 3%; /* 좁은 화면에서는 더 넓게 */
+        height: 48vh;
+    }
+    
+    .smallYear {
+      width: 10%;
+      height: 20vh;
+      top: 40px;
+    }
+
+    .smallYear2 {
+        width: 10%;
+        height: 20vh;
+        top: 230px;
+    }
+
+    .detail{
+        width: 120px;
+        height: 160px;
+        border: 2px solid var(--secondary-color);
+        border-radius: 18px;
+       
+    }
+    .detail2{
+        width: 120px;
+        height: 160px;
+        border: 2px solid var(--secondary-color);
+        border-radius: 18px;
+    
+    }
+    .projectDetail{
+        margin-top: 10px;
+        width: 100px;
+        height: 60px;
+        border: 1px solid var(--secondary-color);
+        overflow: hidden;
+    
+    }
+    
+     
+    .blog{
+        margin-top: 2px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .blogDetail{
+        display: none;
+    }
+    .gitAndNotion{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 2px;
+    }
+    
+    .github{
+        width: auto;
+        height: 15px;
+        margin-right: 10px;
+    }
+    
+    .skills{
+        margin-top: 10px;
+    }
+    .profilePage{
+      
+        margin-bottom: 200px;
+       
+    }
+    .yearText{
+        font-size: 12px;
+        top:7%;
+        right: 25%;
+        
+    }
+    .yearText2{
+        font-size: 12px;
+        top:46%;
+        right: 35%;
+    }
+    .yearText3{
+        font-size: 12px;
+        bottom: 43%;
+        
+        left: 25%;
+    }
+    .yearText4{
+        font-size: 12px;
+        bottom:5%;
+        left: 35%;
+    }
+}
+
+@media (max-width:425px) {
+    .defaultFont {
+        font-size: 20px;
+    }
+    .detail{
+        width: 100px;
+        height: 130px;
+        border: 2px solid var(--secondary-color);
+        border-radius: 15px;
+        top:13%;
+       
+    }
+    .detail2{
+        width: 100px;
+        height: 130px;
+        border: 2px solid var(--secondary-color);
+        border-radius: 15px;
+        bottom: 12%;
+    
+    }
+    .projectDetail{
+        margin-top: 10px;
+        width: 80px;
+        height: 50px;
+        border: 1px solid var(--secondary-color);
+        overflow: hidden;
+    
+    }
+    
+     
+    .blog{
+        margin-top: 1px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .blogDetail{
+        display: none;
+    }
+    .gitAndNotion{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 1px;
+    }
+    
+    .github{
+        width: auto;
+        height: 12px;
+        margin-right: 10px;
+    }
+    
+    .skills{
+        margin-top: 10px;
+    }
+    .profilePage{
+      
+        margin-bottom: 200px;
+       
+    }
+    .yearText{
+        font-size: 10px;
+        top:7%;
+        right: 25%;
+        
+    }
+    .yearText2{
+        font-size: 10px;
+        top:46%;
+        right: 35%;
+    }
+    .yearText3{
+        font-size: 10px;
+        bottom: 43%;
+        
+        left: 22%;
+    }
+    .yearText4{
+        font-size: 10px;
+        
+        left: 35%;
+    }
+}
+
+@media (max-width:380px) {
+    .defaultFont {
+        font-size: 20px;
+    }
+    .year {
+        width: 3%; /* 좁은 화면에서는 더 넓게 */
+        height: 38vh;
+    }
+    
+    .smallYear {
+      width: 10%;
+      height: 15vh;
+      top: 40px;
+    }
+
+    .smallYear2 {
+        width: 10%;
+        height: 15vh;
+        top: 190px;
+    }
+
+    .detail{
+        width: 80px;
+        height: 110px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 12px;
+        top:13%;
+       
+    }
+    .detail2{
+        width: 80px;
+        height: 110px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 12px;
+        bottom: 12%;
+    
+    }
+    .projectDetail{
+        margin-top: 5px;
+        width: 70px;
+        height: 50px;
+        border: 1px solid var(--secondary-color);
+        overflow: hidden;
+    
+    }
+    
+     
+    .blog{
+ 
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .blogDetail{
+        display: none;
+    }
+    .gitAndNotion{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+     
+    }
+    
+    .github{
+        width: auto;
+        height: 9px;
+   
+    }
+    
+    .skills{
+        margin-top: 1px;
+    }
+    .profilePage{
+      
+        margin-bottom: 200px;
+       
+    }
+    .yearText{
+        font-size: 10px;
+        top:7%;
+        right: 25%;
+        
+    }
+    .yearText2{
+        font-size: 10px;
+        top:46%;
+        right: 35%;
+    }
+    .yearText3{
+        font-size: 10px;
+        bottom: 43%;
+        
+        left: 15%;
+    }
+    .yearText4{
+        font-size: 10px;
+        
+        left: 32%;
+    }
+}

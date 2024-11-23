@@ -21,5 +21,11 @@
     "portFolio":"PortFolio",
     "portFolioDetail":"This website introduces Heeyeon Choi, showcasing her career, skills, certifications, and portfolio. Users can send an email directly, and the site also supports themes and multiple languages.",
     "helloGachonDetail":"This is a nurturing and story guide game designed for freshmen in Computer Science at Gachon University. It was developed to help students from the COVID era, who had difficulty accessing departmental information and participating in various events.",
-    "certication":"Certication"
+    "certication":"Certication",
+    "career":"Career",
+    "company1":"b2en",
+    "company2":"Jenosoft",
+    "GyoJung": "Integrated Control System for the Ministry of Justice Correctional Bureau",
+    "GyoJungDetail": "This is a web service designed for the Ministry of Justice Correctional Bureau. It retrieves real-time location and transportation information from the server, displays it on a map, and allows route setting.",
+    "maskRcnn": "First-person perspective pedestrian video data from the https://aihub.or.kr/ site was utilized. Using this data, semantic segmentation tasks were performed."
   }

@@ -74,11 +74,14 @@
 
     .arrowButton {
         margin: 10px 0; /* 위아래 간격 추가 */
+        transform: rotate(90deg); /* 90도 회전 */
     }
 
     .card, .centerCard, .sideCard {
         width: 30vw; /* 카드 너비 유지 */
         aspect-ratio: 5 / 3; /* 비율 유지 */
+        border-radius: 15px;
+        border-width: 2px;
     }
 }
 
