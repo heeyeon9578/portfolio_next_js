@@ -1,0 +1,62 @@
+.profilePage{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   
+}
+.emailForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 20px 0;
+  }
+  
+  .input, .textarea {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid var(--background-color);
+    border-radius: 4px;
+    width: 100%;
+  
+  }
+  
+  .textarea {
+    height: 120px;
+  }
+  
+  .submitButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color:var(--background-color);
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: var(--third-color);
+  }
+  
+  .statusMessage {
+    margin-top: 16px;
+    font-size: 14px;
+    color: green;
+  }
+  
+.defaultFont{
+    font-size: 40px;
+}
+
+@media (max-width:815px) {
+    .defaultFont {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:575px) {
+    .defaultFont {
+        font-size: 20px;
+    }
+}
