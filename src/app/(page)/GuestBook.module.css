@@ -1,0 +1,166 @@
+
+  
+  .profilePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 48px var(--secondary-color);
+  }
+  
+  .defaultFont {
+    font-size: 40px;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .inputField {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .textareaField {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    resize: none;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--third-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--forth-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .paginationButton {
+    padding: 5px 15px;
+    border: 1px solid var(--secondary-color);
+    background: var(--background-color);
+    color: var(--text-color);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .paginationButton:hover {
+    background: var(--secondary-color);
+    color: white;
+  }
+  
+  .activePage {
+    background: var(--third-color);
+    color: white;
+    font-weight: bold;
+    border: 1px solid var(--third-color);
+  }
+  
+  .entries {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .entryCard {
+    background: var(--primary-color);
+    padding: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .entryName {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .entryContent {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  
+  .entryMeta {
+    font-size: 12px;
+    color: var(--forth-color);
+  }
+  
+  @media (max-width: 815px) {
+    .defaultFont {
+      font-size: 30px;
+    }
+  
+    .inputField,
+    .textareaField {
+      font-size: 14px;
+    }
+  
+    .button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .defaultFont {
+      font-size: 24px;
+    }
+  
+    .button {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .profilePage {
+      padding: 15px;
+    }
+  
+    .defaultFont {
+      font-size: 20px;
+    }
+  
+    .inputField,
+    .textareaField {
+      font-size: 12px;
+    }
+  
+    .button {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  

@@ -37,7 +37,7 @@ const MainPage: React.FC<MainPageProps> = ({ scrollTo }) => {
         <button className={styles.primaryBtn} onClick={()=>scrollTo('career')} >{t('experience')}</button>
         <button className={styles.primaryBtn} onClick={()=>scrollTo('awards')} >{t('awards')}</button>
         <button className={styles.primaryBtn} onClick={()=>scrollTo('email')} >{t('email')}</button>
-        <button className={styles.primaryBtn}>{t('guestbook')}</button>
+        <button className={styles.primaryBtn} onClick={()=>scrollTo('guestbook')}>{t('guestbook')}</button>
       </div>
 
       <Image className={styles.profileImg} src={profileImg} alt="Profile" priority></Image>

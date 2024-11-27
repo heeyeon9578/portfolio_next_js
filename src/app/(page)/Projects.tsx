@@ -112,7 +112,7 @@ const Projects: React.FC = () => {
         window.open(`https://github.com/BSBSCompany/Geugol_Front`, '_blank');
         break;
       case portFolio:
-        window.open(`https://github.com/heeyeon9578/portFolio`, '_blank');
+        window.open(`https://github.com/heeyeon9578/portfolio_next_js`, '_blank');
         break;
       case helloGachon:
         window.open(`https://github.com/heeyeon9578/HelloGachon`, '_blank');

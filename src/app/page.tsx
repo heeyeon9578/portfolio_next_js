@@ -9,6 +9,7 @@ import Certification from '../app/(page)/Certification';
 import Career from './(page)/Career';
 import Awards from './(page)/Awards';
 import Email from "./(page)/Email";
+import GuestBook from './(page)/GuestBook';
 const Dashboard: React.FC = () => {
 
  // Profile 컴포넌트에 대한 ref 생성
@@ -19,6 +20,7 @@ const Dashboard: React.FC = () => {
  const careerRef = useRef<HTMLDivElement>(null);
  const awardsRef = useRef<HTMLDivElement>(null);
  const emailRef = useRef<HTMLDivElement>(null);
+ const guestBookRef = useRef<HTMLDivElement>(null);
 
  // Profile로 스크롤하는 함수
  const scrollTo = (menu: string) => {
@@ -44,6 +46,9 @@ const Dashboard: React.FC = () => {
   }
   if ( menu ==='email' && emailRef.current) {
     emailRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
+  if ( menu ==='guestbook' && guestBookRef.current) {
+    guestBookRef.current.scrollIntoView({ behavior: 'smooth' });
   }
  };
   return (
@@ -77,6 +82,9 @@ const Dashboard: React.FC = () => {
           <Email />
         </div>
 
+        <div ref={guestBookRef}>
+          <GuestBook />
+        </div>
       </div>
      
 

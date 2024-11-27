@@ -36,6 +36,12 @@
     "majubomDetail":"다문화 가정의 청소년 혹은 한국에 거주하는 외국인 청소년을 위해 교육 상담 및 정보를 제공하는 플랫폼입니다.",
     "writeEmail":"이메일 주소를 입력해주세요.",
     "writeEmailSubject":"이메일 제목을 입력해주세요.",
-    "writeEmailContent":"이메일 내용을 입력해주세요."
+    "writeEmailContent":"이메일 내용을 입력해주세요.",
+    "name": "이름",
+    "sendCode": "코드 전송",
+    "content": "내용",
+    "verificationCode": "인증 코드",
+    "verify": "인증",
+    "list": "목록"
 
   }

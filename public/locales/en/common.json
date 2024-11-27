@@ -36,6 +36,12 @@
     "majubomDetail": "A platform that provides educational counseling and information for multicultural family adolescents or foreign adolescents living in Korea.",
     "writeEmail": "Please enter your email address.",
     "writeEmailSubject": "Please enter the email subject.",
-    "writeEmailContent": "Please enter the email content."
+    "writeEmailContent": "Please enter the email content.",
+    "name":"Name",
+    "sendCode":"Send Code",
+    "content":"Content",
+    "verificationCode":"Verification Code",
+    "verify":"Verify",
+    "list":"List"
 
   }
