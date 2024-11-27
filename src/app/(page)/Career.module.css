@@ -21,20 +21,20 @@
 /* 기본 스타일 */
 .year {
     width: 3%; /* 너비를 화면의 3%로 설정 */
-    height: 128vh; /* 높이를 뷰포트 높이에 기반 */
+    height: 150vh; /* 높이를 뷰포트 높이에 기반 */
     margin-top: 20px;
   }
   
   .smallYear {
     width: 10%; /* 너비를 화면의 10%로 설정 */
-    height: 50vh; /* 높이를 뷰포트 높이에 기반 */
+    height: 60vh; /* 높이를 뷰포트 높이에 기반 */
     position: absolute;
     top: 9%;
   }
   
   .smallYear2 {
     width: 10%; /* 너비를 화면의 10%로 설정 */
-    height: 50vh; /* 높이를 뷰포트 높이에 기반 */
+    height: 60vh; /* 높이를 뷰포트 높이에 기반 */
     position: absolute;
     top: 55%;
   }
@@ -124,7 +124,7 @@
     font-size: 30px;
     position: absolute;
     top:7%;
-    right: 34%;
+    right: 31%;
     
 }
 .yearText2{
@@ -138,14 +138,14 @@
     position: absolute;
     bottom: 43%;
     
-    left: 32%;
+    left: 25%;
 }
 .yearText4{
     font-size: 30px;
     position: absolute;
-    bottom:60px;
+    bottom:50px;
     
-    left: 40%;
+    left: 38%;
 }
 
 .projectDetail{
@@ -228,13 +228,13 @@
     }
     .yearText{
         font-size: 20px;
-        top:7%;
-        right: 29%;
+        top:8%;
+        right: 32%;
         
     }
     .yearText2{
         font-size: 20px;
-        top:46%;
+        top:47%;
         right: 39%;
     }
     .yearText3{
@@ -245,9 +245,7 @@
     }
     .yearText4{
         font-size: 20px;
-        bottom:60px;
-        
-        left: 38%;
+
     }
     .arrowButton {
         top: 75%
@@ -260,7 +258,7 @@
     }
     .year {
         width: 5%; /* 좁은 화면에서는 더 넓게 */
-        height: 76vh;
+        height: 83vh;
       }
     
     .smallYear {
@@ -284,7 +282,8 @@
     .detail2{
         width: 200px;
         height: 250px;
-        
+        bottom:0%;
+        right: 10%;
     
     }
     .projectDetail{
@@ -327,25 +326,25 @@
        
     }
     .yearText{
-        font-size: 20px;
-        top:7%;
-        right: 29%;
+        font-size: 18px;
+        top:8%;
+        right: 33%;
         
     }
     .yearText2{
-        font-size: 20px;
-        top:46%;
-        right: 39%;
+        font-size: 18px;
+        top:43%;
+        right: 41%;
     }
     .yearText3{
-        font-size: 20px;
-        bottom: 43%;
+        font-size: 18px;
+        bottom: 38%;
         
         left: 25%;
     }
     .yearText4{
-        font-size: 20px;
-        bottom:60px;
+        font-size: 18px;
+        bottom:25px;
         
         left: 38%;
     }
@@ -354,14 +353,13 @@
         color: white;
         border: none;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
         cursor: pointer;
         position: absolute;
-        bottom: 0%;
-        top:96%;
-        right: 21%;
+        top:102%;
+        right: 23%;
         transform: rotate(90deg); /* 90도 회전 */
       }
 }
@@ -369,8 +367,8 @@
     .defaultFont {
         font-size: 30px;
     }
-    .year {
-        width: 5%; /* 좁은 화면에서는 더 넓게 */
+    /* .year {
+        width: 5%; 
         height: 76vh;
       }
     
@@ -384,7 +382,7 @@
         width: 20%;
         height: 30vh;
         top: 360px;
-    }
+    } */
 
     .detail{
         width: 150px;
@@ -398,6 +396,9 @@
         height: 190px;
         border: 4px solid var(--secondary-color);
         border-radius: 20px;
+        bottom:8%;
+        right: 10%;
+       
     
     }
     .projectDetail{
@@ -443,7 +444,7 @@
         margin-bottom: 200px;
        
     }
-    .yearText{
+    /* .yearText{
         font-size: 15px;
         top:7%;
         right: 25%;
@@ -464,9 +465,10 @@
         font-size: 15px;
         bottom:60px;
         left: 35%;
-    }
+    } */
     .arrowButton {
-       right: 20%
+       top:96%;
+       right: 21%;
     
       }
 }
@@ -477,7 +479,7 @@
 
     .year {
         width: 3%; /* 좁은 화면에서는 더 넓게 */
-        height: 48vh;
+        height: 52vh;
     }
     
     .smallYear {
@@ -504,6 +506,9 @@
         height: 160px;
         border: 2px solid var(--secondary-color);
         border-radius: 18px;
+        bottom:2%;
+        right: 10%;
+       
     
     }
     .projectDetail{
@@ -518,7 +523,7 @@
      
     .blog{
         margin-top: 2px;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: bold;
     }
     .blogDetail{
@@ -551,35 +556,32 @@
     }
     .yearText{
         font-size: 12px;
-        top:7%;
-        right: 25%;
+        top:8%;
+        right: 30%;
         
     }
     .yearText2{
         font-size: 12px;
-        top:46%;
-        right: 35%;
+        top:45%;
+        right: 38%;
     }
     .yearText3{
         font-size: 12px;
-        bottom: 43%;
+        bottom: 38%;
         
         left: 25%;
     }
     .yearText4{
         font-size: 12px;
-        bottom:5%;
-        left: 35%;
+        bottom:3%;
+        left: 38%;
     }
     .arrowButton {
         background-color: var(--secondary-color);
         color: white;
         border: none;
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        font-size: 15px;
-    
+        top:100%
       }
 }
 
@@ -600,11 +602,11 @@
         height: 130px;
         border: 2px solid var(--secondary-color);
         border-radius: 15px;
-        bottom: 12%;
+        bottom: 6%;
     
     }
     .projectDetail{
-        margin-top: 10px;
+        margin-top: 0px;
         width: 80px;
         height: 50px;
         border: 1px solid var(--secondary-color);
@@ -614,6 +616,7 @@
     
      
     .blog{
+
         margin-top: 1px;
         font-size: 10px;
         font-weight: bold;
@@ -623,7 +626,7 @@
     }
     .blogDetail2{
         max-width: 90%;
-        font-size: 6px;
+        font-size: 5px;
     }
     .gitAndNotion{
         display: flex;
@@ -648,25 +651,21 @@
     }
     .yearText{
         font-size: 10px;
-        top:7%;
-        right: 25%;
+       
         
     }
     .yearText2{
         font-size: 10px;
-        top:46%;
-        right: 35%;
+      
     }
     .yearText3{
         font-size: 10px;
-        bottom: 43%;
-        
-        left: 22%;
+       
     }
     .yearText4{
         font-size: 10px;
         
-        left: 35%;
+       
     }
 }
 
@@ -676,7 +675,7 @@
     }
     .year {
         width: 3%; /* 좁은 화면에서는 더 넓게 */
-        height: 38vh;
+        height: 42vh;
     }
     
     .smallYear {
@@ -704,7 +703,7 @@
         height: 110px;
         border: 1px solid var(--secondary-color);
         border-radius: 12px;
-        bottom: 12%;
+        bottom: 5%;
     
     }
     .projectDetail{
@@ -719,7 +718,7 @@
      
     .blog{
  
-        font-size: 8px;
+        font-size: 7px;
         font-weight: bold;
     }
     .blogDetail{
@@ -734,12 +733,12 @@
     
     .github{
         width: auto;
-        height: 9px;
+        height: 11px;
    
     }
     
     .skills{
-        margin-top: 1px;
+        margin-top: 2px;
     }
     .profilePage{
       
@@ -748,35 +747,35 @@
     }
     .yearText{
         font-size: 10px;
-        top:7%;
+        top:11%;
         right: 25%;
         
     }
     .yearText2{
         font-size: 10px;
-        top:46%;
+        top:44%;
         right: 35%;
     }
     .yearText3{
         font-size: 10px;
-        bottom: 43%;
+        bottom: 38%;
         
-        left: 15%;
+        left: 18%;
     }
     .yearText4{
         font-size: 10px;
-        
-        left: 32%;
+        bottom: 5%;
+        left: 34%;
     }
     .arrowButton {
         background-color: var(--secondary-color);
         color: white;
         border: none;
         border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        font-size: 10px;
-        top:90%;
+        width: 15px;
+        height:15px;
+        font-size: 7px;
+        top:100%;
     
       }
 

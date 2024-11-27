@@ -25,10 +25,13 @@
     "career":"Career",
     "company1":"b2en",
     "company2":"Jenosoft",
-    "GyoJung": "Integrated Control System for the Ministry of Justice",
+    "GyoJung": "Integrated Control System",
     "GyoJungDetail": "It retrieves real-time location and transportation information from the server, displays it on a map.",
     "maskRcnn": "Using First-person perspective pedestrian video data, semantic segmentation tasks were performed.",
-    "CMS": "Customer Management System (CMS)",
+    "CMS": "CMS",
     "CMSDetail": "A web service by Jenos Soft designed to manage client companies, delivery information, and products. It records information about products delivered by Jenos Soft and tracks how and where these products are used by client companies. It also provides role-based management by assigning distinct permissions to client companies, Jenos Soft engineers, and partner companies.",
-    "TliveGCS": "Developed a notification feature for the T live GCS product that sends messages with images to administrators or workers when AI detects a fire. Additionally, implemented a drone log feature to systematically view and manage drone activity logs."
+    "TliveGCS": "Developed a notification feature for the T live GCS product that sends messages with images to administrators or workers when AI detects a fire. Additionally, implemented a drone log feature to systematically view and manage drone activity logs.",
+    "awards":"Awards",
+    "majubom": "Majubom",
+    "majubomDetail": "A platform that provides educational counseling and information for multicultural family adolescents or foreign adolescents living in Korea."
   }

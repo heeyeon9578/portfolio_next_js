@@ -1,0 +1,564 @@
+.profilePage{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 100px;
+   
+}
+
+.devider{
+    width: 100%;
+    height: 4px;
+}
+
+.defaultFont{
+    font-size: 40px;
+}
+
+.buttons{
+    margin-top:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.secondaryBtn{
+    margin-top: 10px;
+    margin-right: 40px;  /* 각 버튼 사이에 10px의 간격을 추가 */
+    width: 50%;
+    padding: 10px 30px;
+    height: 40px;
+    background-color:var(--secondary-color);
+    border: none;
+    border-radius:20px;
+    color: var(--text-color);
+    filter: drop-shadow(0px 4px 48px var(--secondary-color));
+    font-size: 20px; 
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
+}
+.activeSecondBtn{
+    color: var(--background-color);
+    background-color:var(--third-color);
+    filter: drop-shadow(0px 4px 48px var(--shadow-color));
+}
+
+.secondaryBtn:hover{ 
+    transform: scale(1.1); /* 이미지를 확대하고 살짝 회전시킴 */
+}
+
+.projectAndDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+}
+
+.project{
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    border: 7px solid var(--secondary-color);
+    filter: drop-shadow(0px 4px 48px var(--secondary-color));
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: border 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.project:hover{
+    transform: scale(1.1); /* 이미지를 확대하고 살짝 회전시킴 */
+}
+
+/* 클릭된 상태에 추가할 스타일 */
+.active {
+    border: 7px solid var(--third-color);
+    filter: drop-shadow(0px 4px 48px var(--third-color));
+}
+
+.projectImg{
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+}
+
+.projects{
+    padding: 100px;
+}
+
+.detail{
+    width: 400px;
+    height: 613px;
+    background-color: var(--background-color);
+    border: 7px solid var(--secondary-color);
+    box-shadow: 0px 4px 48px var(--secondary-color);
+    border-radius: 23px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.projectDetail{
+    margin-top: 10px;
+    width: 200px;
+    height: 380px;
+    border: 3px solid var(--secondary-color);
+    overflow: hidden;
+
+}
+.paperAward {
+    padding: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectDetail2 {
+    aspect-ratio: 3 / 4; /* 원하는 비율 설정 (예: 3:4 비율) */
+    max-width: 90%; /* 부모 요소의 너비에 비례 */
+    max-height: 90%; /* 부모 요소의 높이에 비례 */
+    width: auto; /* 비율을 유지하며 크기 조정 */
+    height: auto; /* 비율을 유지하며 크기 조정 */
+    border: 3px solid var(--secondary-color);
+    overflow: hidden;
+}
+
+.detailAll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.imgAndName{
+    display: flex; 
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    align-content: center;
+}
+.blog{
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.blogDetail{
+    max-width: 90%;
+    margin-top: 15px;
+}
+.gitAndNotion{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.github{
+    width: auto;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.skills{
+    margin-top: 10px;
+}
+
+@media (max-width:1191px) {
+    .devider{
+        width: 100%;
+        height: 4px;
+    }
+    .secondaryBtn{
+        
+        width: 40%;
+        
+    }
+
+    .projectAndDetail{
+        margin-top: 20px;
+        min-height: unset;
+    }
+    
+    .projects{
+        padding: 30px;
+    }
+
+    .project{
+        border-radius: 100%;
+        width: 80px;
+        height: 80px;
+        border: 4px solid var(--secondary-color);
+       
+
+    }
+    /* 클릭된 상태에 추가할 스타일 */
+    .active {
+        border: 6px solid var(--third-color);
+        filter: drop-shadow(0px 4px 48px var(--third-color));
+    }
+    .projectImg{
+        object-fit: cover;
+        width: 80px;
+        height: 80px;
+    }
+
+    .detail{
+        width: 300px;
+        height: 513px;
+        background-color: var(--background-color);
+        border: 4px solid var(--secondary-color);
+        box-shadow: 0px 4px 48px var(--secondary-color);
+        border-radius: 23px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .projectDetail{
+        margin-top: 10px;
+        width: 150px;
+        height: 300px;
+        border: 3px solid var(--secondary-color);
+        overflow: hidden;
+    
+    }
+    /* .projectDetail2{
+        margin-top: 10px;
+        width: 200px;
+        height: 350px;
+        border: 3px solid var(--secondary-color);
+        overflow: hidden;
+    
+    } */
+    .detailAll{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .imgAndName{
+        display: flex; 
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+        align-content: center;
+    }
+    .blog{
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .blogDetail{
+        max-width: 90%;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .gitAndNotion{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+    
+    .github{
+        width: auto;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .skills{
+        margin-top: 10px;
+    }
+    .profilePage{
+      
+        margin-bottom: 200px;
+       
+    }
+}
+@media (max-width:842px) {
+    .paperAward {
+        padding: 20px;
+        width: 40%;
+     
+    }
+}
+@media (max-width:815px) {
+    .defaultFont{
+        font-size: 30px;
+    }
+    .devider{
+        width: 100%;
+        height: 4px;
+    }
+    .secondaryBtn{
+        
+        width: 40%;
+        
+    }
+
+    .profilePage{
+    
+        margin-top: 20px;
+        margin-bottom: 100px;
+       
+    }
+
+}
+
+@media (max-width:665px) {
+    .devider{
+        width: 100%;
+        height: 4px;
+    }
+    .secondaryBtn{       
+        width: 35%;   
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .projectAndDetail{
+        margin-top: 20px;
+    }
+    
+    .project{  
+        width: 60px;
+        height: 60px;
+    }
+     /* 클릭된 상태에 추가할 스타일 */
+     .active {
+        border: 5px solid var(--third-color);
+        filter: drop-shadow(0px 4px 48px var(--third-color));
+    }
+    .projectImg{
+        width: 60px;
+        height: 60px;
+    }
+
+    .detail{
+        width: 200px;
+        height: 413px;
+        border-radius: 15px;
+    }
+    
+    .projectDetail{
+        margin-top: 10px;
+        width: 120px;
+        height: 240px;
+        border: 3px solid var(--secondary-color);
+        overflow: hidden;
+    
+    }
+    /* .projectDetail2{
+        margin-top: 10px;
+        width: 150px;
+        height: 300px;
+        border: 3px solid var(--secondary-color);
+        overflow: hidden;
+    
+    } */
+    .blog{
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .blogDetail{
+        max-width: 90%;
+        font-size: 9px;
+        margin-top: 15px;
+    }
+    .gitAndNotion{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+    
+    .github{
+        width: auto;
+        height: 20px;
+        margin-right: 10px;
+    }
+    
+    .skills{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:575px) {
+    .defaultFont{
+        font-size: 20px;
+    }
+    .devider{
+        width: 100%;
+        height: 4px;
+    }
+    .secondaryBtn{       
+        width: 30%;   
+        font-size: 15px;
+    }
+
+    .projectAndDetail{
+        margin-top: 20px;
+    }
+    
+    .projects{
+        padding:40px
+    }
+    .project{  
+        width: 40px;
+        height: 40px;
+        border: 2px solid var(--secondary-color);
+    }
+     /* 클릭된 상태에 추가할 스타일 */
+     .active {
+        border: 4px solid var(--third-color);
+        filter: drop-shadow(0px 4px 48px var(--third-color));
+    }
+    .projectImg{
+        width: 40px;
+        height: 40px;
+    }
+
+    .detail{
+        width: 180px;
+        height: 333px;
+        border-radius: 15px;
+    }
+    
+    .projectDetail{
+        margin-top: 10px;
+        width: 100px;
+        height: 200px;
+        border: 1px solid var(--secondary-color);
+        overflow: hidden;
+    
+    }
+    
+    .blog{
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .blogDetail{
+        max-width: 90%;
+        font-size: 8px;
+        margin-top: 5px;
+    }
+    .gitAndNotion{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+    
+    .github{
+        width: auto;
+        height: 18px;
+        margin-right: 5px;
+    }
+    
+    .skills{
+        margin-top: 5px;
+    }
+}
+
+@media (max-width:575px) {
+    .secondaryBtn{       
+        padding: 5px 10px;
+        width: 30%; 
+        height: 18px;  
+        font-size: 10px;
+    }
+    .projects{
+        padding:10px
+    }
+
+    .paperAward {
+        padding: 10px;
+        width: 50%;
+     
+    }
+}
+@media (max-width:385px) {
+    .github{
+        width: auto;
+        height: 12px;
+        margin-right: 5px;
+    }
+    .blogDetail{
+        display: none;
+    }
+    .projectDetail{
+        margin-top: 10px;
+        width: 80px;
+        height: 150px;
+        border: 1px solid var(--secondary-color);
+        overflow: hidden;
+    
+    }
+     .detail{
+        width: 150px;
+        height: 250px;
+        border-radius: 13px;
+        border: 2px solid var(--secondary-color);
+    }
+    
+}
+@media (max-width:325px) {
+    .devider{
+        width: 100%;
+        height: 4px;
+    }
+    .projectAndDetail{
+        margin-top: 20px;
+    }
+    .project{  
+        width: 30px;
+        height: 30px;
+        border: 2px solid var(--secondary-color);
+    }
+    /* 클릭된 상태에 추가할 스타일 */
+    .active {
+       border: 3px solid var(--third-color);
+       filter: drop-shadow(0px 4px 48px var(--third-color));
+    }
+    .projectImg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .projectDetail{
+        margin-top: 10px;
+        width: 80px;
+        height: 150px;
+        border: 1px solid var(--secondary-color);
+        overflow: hidden;
+    
+    }
+     .detail{
+        width: 150px;
+        height: 250px;
+        border-radius: 13px;
+        border: 2px solid var(--secondary-color);
+    }
+    
+    .blog{
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+   
+    .gitAndNotion{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+    
+    
+    
+    .skills{
+        margin-top: 5px;
+    }
+}

@@ -7,6 +7,7 @@ import Profile from '../app/(page)/Profile'
 import Projects from '../app/(page)/Projects';
 import Certification from '../app/(page)/Certification';
 import Career from './(page)/Career';
+import Awards from './(page)/Awards';
 
 const Dashboard: React.FC = () => {
 
@@ -16,7 +17,7 @@ const Dashboard: React.FC = () => {
  const certRef = useRef<HTMLDivElement>(null);
  const mainRef = useRef<HTMLDivElement>(null);
  const careerRef = useRef<HTMLDivElement>(null);
-
+ const awardsRef = useRef<HTMLDivElement>(null);
  // Profile로 스크롤하는 함수
  const scrollTo = (menu: string) => {
    if ( menu ==='profile' &&profileRef.current) {
@@ -35,6 +36,9 @@ const Dashboard: React.FC = () => {
 
   if ( menu ==='career' && careerRef.current) {
     careerRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
+  if ( menu ==='awards' && awardsRef.current) {
+    awardsRef.current.scrollIntoView({ behavior: 'smooth' });
   }
  };
   return (
@@ -58,6 +62,10 @@ const Dashboard: React.FC = () => {
 
         <div ref={careerRef}>
           <Career />
+        </div>
+
+        <div ref={awardsRef}>
+          <Awards />
         </div>
 
       </div>
