@@ -10,6 +10,7 @@ import download from '../images/download.png';
 import goUp from '../images/goUp.png'
 import '../../../i18n'
 import { useTranslation } from 'react-i18next';
+import ThemeSwitcher from '@/util/ThemeSwitcher';
 interface StickyPageProps {
   scrollTo: (menu:string) => void;  // 프로필로 스크롤하기 위한 함수 prop
 }
@@ -70,6 +71,7 @@ const Sticky: React.FC<StickyPageProps> = ({ scrollTo }) => {
           {i18n.language === 'en' ? '한' : 'En'}
         </div>
         <div className={styles.circle}>
+        <ThemeSwitcher />
           <Image src={colorPicker} className={styles.colorPicker} alt='colorPicker'></Image>
         </div>
         <div className={styles.circle} onClick={goToGithub}>

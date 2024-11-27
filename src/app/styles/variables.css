@@ -7,4 +7,23 @@
     --text-color: #3E4149;
     --shadow-color: #F2789F;
   }
+  .theme-dark {
+    --primary-color: #1E1E2F;
+    --secondary-color: #2D2D44;
+    --third-color: #4B4B6A;
+    --forth-color: #6A6A8A;
+    --background-color: #121212;
+    --text-color: #FFFFFF;
+    --shadow-color: #444466;
+  }
+  
+  .theme-blue {
+    --primary-color: #E8F0FE;
+    --secondary-color: #BED2F2;
+    --third-color: #709DED;
+    --forth-color: #6E799C;
+    --background-color: #F5F9FF;
+    --text-color: #243B53;
+    --shadow-color: #729BEB;
+  }
   
