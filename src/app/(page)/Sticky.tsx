@@ -18,7 +18,7 @@ interface StickyPageProps {
 const Sticky: React.FC<StickyPageProps> = ({ scrollTo }) => {
 
   const { i18n } = useTranslation('common');
-
+  const [showColors, setShowColors] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
   
   useEffect(() => {
@@ -41,21 +41,21 @@ const Sticky: React.FC<StickyPageProps> = ({ scrollTo }) => {
     i18n.changeLanguage(newLanguage);
   };
 
-    // 새로운 창에서 GitHub 페이지 열기
-    const goToGithub = () => {
-      window.open('https://github.com/heeyeon9578/', '_blank');
-    }
-  
-    // 새로운 창에서 Tistory 페이지 열기
-    const goToTistory = () => {
-      window.open('https://choi-hee-yeon.tistory.com/', '_blank');
-    }
-  
-    // 새로운 창에서 Notion 페이지 열기
-    const goToNotion = () => {
-      window.open('http://heeyeon9578.notion.site/', '_blank');
-    }
-  
+  // 새로운 창에서 GitHub 페이지 열기
+  const goToGithub = () => {
+    window.open('https://github.com/heeyeon9578/', '_blank');
+  }
+
+  // 새로운 창에서 Tistory 페이지 열기
+  const goToTistory = () => {
+    window.open('https://choi-hee-yeon.tistory.com/', '_blank');
+  }
+
+  // 새로운 창에서 Notion 페이지 열기
+  const goToNotion = () => {
+    window.open('http://heeyeon9578.notion.site/', '_blank');
+  }
+
   const downloadResume = () =>{
     const link = document.createElement('a');
     link.href = '/최희연_이력서.pdf';  // PDF 파일 경로 (public 폴더에 저장)
@@ -70,8 +70,8 @@ const Sticky: React.FC<StickyPageProps> = ({ scrollTo }) => {
         <div className={styles.circle} onClick={toggleLanguage}>
           {i18n.language === 'en' ? '한' : 'En'}
         </div>
-        <div className={styles.circle}>
-        <ThemeSwitcher />
+        <div className={styles.circle} onClick={()=> setShowColors(!showColors)}>
+        {showColors && (<ThemeSwitcher />)}
           <Image src={colorPicker} className={styles.colorPicker} alt='colorPicker'></Image>
         </div>
         <div className={styles.circle} onClick={goToGithub}>

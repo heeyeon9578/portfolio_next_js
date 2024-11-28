@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-
+import styles from "./ThemeSwitcher.module.css";
 
 const ThemeSwitcher: React.FC = () => {
   const [theme, setTheme] = useState<
@@ -49,18 +49,19 @@ const ThemeSwitcher: React.FC = () => {
   }, []);
 
   return (
-    <div >
-      <button onClick={() => toggleTheme('default')}>Default</button>
-      <button onClick={() => toggleTheme('dark')}>Dark</button>
-      <button onClick={() => toggleTheme('white')}>White</button>
-      <button onClick={() => toggleTheme('red')}>Red</button>
-      <button onClick={() => toggleTheme('orange')}>Orange</button>
-      <button onClick={() => toggleTheme('yellow')}>Yellow</button>
-      <button onClick={() => toggleTheme('green')}>Green</button>
-      <button onClick={() => toggleTheme('blue')}>Blue</button>
-      <button onClick={() => toggleTheme('navy')}>Navy</button>
-      <button onClick={() => toggleTheme('purple')}>Purple</button>
+    <div>
+        <button className={styles.pink} onClick={() => toggleTheme('default')} title="Default"></button>
+        <button className={styles.dark} onClick={() => toggleTheme('dark')} title="Dark"></button>
+        <button className={styles.white} onClick={() => toggleTheme('white')} title="White"></button>
+        <button className={styles.red} onClick={() => toggleTheme('red')} title="Red"></button>
+        <button className={styles.orange} onClick={() => toggleTheme('orange')} title="Orange"></button>
+        <button className={styles.yellow} onClick={() => toggleTheme('yellow')} title="Yellow"></button>
+        <button className={styles.green} onClick={() => toggleTheme('green')} title="Green"></button>
+        <button className={styles.blue} onClick={() => toggleTheme('blue')} title="Blue"></button>
+        <button className={styles.navy} onClick={() => toggleTheme('navy')} title="Navy"></button>
+        <button className={styles.purple} onClick={() => toggleTheme('purple')} title="Purple"></button>
     </div>
+
   );
 };
 

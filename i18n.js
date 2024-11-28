@@ -11,7 +11,7 @@ i18n
   .use(initReactI18next)
   .init({
     ...i18nConfig,
-    fallbackLng: 'en',
+    fallbackLng: 'ko',
     debug: process.env.NODE_ENV === 'development',
     interpolation: {
       escapeValue: false, // React는 XSS 보호가 기본 적용되므로 설정하지 않음
