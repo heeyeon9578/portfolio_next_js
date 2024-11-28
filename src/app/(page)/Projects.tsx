@@ -98,7 +98,7 @@ const Projects: React.FC = () => {
   };
 
   const goToPortFolio = () => {
-    window.open('https://heeyeon-portfolio.netlify.app/', '_blank');
+    window.open('https://heeyeonportfolio.vercel.app/', '_blank');
   };
 
   // 새로운 창에서 GitHub 페이지 열기
