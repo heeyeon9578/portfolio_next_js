@@ -42,6 +42,12 @@
     "content":"Content",
     "verificationCode":"Verification Code",
     "verify":"Verify",
-    "list":"List"
-
+    "list":"List",
+    "sendEmail":"Send Email",
+    "vcs":"Verification code sent!",
+    "ftsvc":"Failed to send verification code.",
+    "vs":"Verification successful!",
+    "ic":"Invalid code!",
+    "es":"Entry saved!",
+    "ftse":"Failed to save entry."
   }

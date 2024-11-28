@@ -96,7 +96,7 @@ const Email: React.FC = () => {
           className={styles.textarea}
         />
         <button type="submit" className={styles.submitButton}>
-          Send Email
+         {t('sendEmail')}
         </button>
       </form>
       {status && <div className={styles.statusMessage}>{status}</div>}

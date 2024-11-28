@@ -18,6 +18,7 @@ const GuestBook: React.FC = () => {
   const { t, i18n } = useTranslation('common');
   const [isInitialized, setIsInitialized] = useState(false);
 
+
   const fetchEntries = async (page: number) => {
     try {
       const response = await fetch(`/api/guestbook?page=${page}&limit=10`);
@@ -46,9 +47,9 @@ const GuestBook: React.FC = () => {
     });
 
     if (response.ok) {
-      alert('Verification code sent!');
+      alert(t('vcs'));
     } else {
-      alert('Failed to send verification code.');
+      alert(t('ftsvc'));
     }
   };
 
@@ -61,9 +62,9 @@ const GuestBook: React.FC = () => {
 
     if (response.ok) {
       setIsVerified(true);
-      alert('Verification successful!');
+      alert(t('vs'));
     } else {
-      alert('Invalid code!');
+      alert(t('ic'));
     }
   };
 
@@ -76,9 +77,9 @@ const GuestBook: React.FC = () => {
 
     if (response.ok) {
       fetchEntries(1); // 새로 저장 후 첫 페이지로 이동하여 데이터 새로고침
-      alert('Entry saved!');
+      alert(t('es'));
     } else {
-      alert('Failed to save entry.');
+      alert(t('ftse'));
     }
   };
 
@@ -162,7 +163,7 @@ const GuestBook: React.FC = () => {
             <div key={index} className={styles.entryCard}>
               <h3 className={styles.entryName}>{entry.name}</h3>
               <p className={styles.entryContent}>{entry.content}</p>
-              <small className={styles.entryMeta}>Email: {entry.email}</small>
+              <small className={styles.entryMeta}>{entry.email}</small>
               <br />
               <small className={styles.entryMeta}>
                 {new Intl.DateTimeFormat('en-US', {

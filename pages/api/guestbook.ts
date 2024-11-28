@@ -17,6 +17,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.status(201).json({ message: 'Entry saved' });
   } else if (req.method === 'GET') {
     try {
+
       const { page = '1', limit = '10' } = req.query; // 기본값 설정
       const pageNumber = parseInt(page as string, 10);
       const limitNumber = parseInt(limit as string, 10);
@@ -28,7 +29,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         .skip((pageNumber - 1) * limitNumber) // 페이지에 해당하는 항목 건너뛰기
         .limit(limitNumber) // 한 페이지에 표시할 항목 수
         .toArray();
-
+      
+      
       // 총 데이터 개수
       const totalEntries = await collection.countDocuments();
 
@@ -39,10 +41,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         currentPage: pageNumber,
       });
     } catch (error) {
+
       console.error('Error fetching paginated entries:', error);
       res.status(500).json({ message: 'Error fetching entries' });
     }
   } else {
-    res.status(405).json({ message: 'Method not allowed' });
+    res.status(405).json({ message: 'Method not allowed' }); 
   }
 }
