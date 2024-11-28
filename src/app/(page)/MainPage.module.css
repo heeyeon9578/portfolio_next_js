@@ -30,7 +30,9 @@
     transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
 }
 
-
+html[lang='en'] .primaryBtn {
+    font-size: 15px; /* 영어일 경우 작은 크기 */
+  }
 .primaryBtn:hover{ 
     color: var(--background-color);
     background-color:var(--third-color);
@@ -83,6 +85,10 @@
         font-size: 15px; 
         transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
     }
+    html[lang='en'] .primaryBtn {
+        font-size: 12px; /* 영어일 경우 작은 크기 */
+        padding: 10px 10px;
+      }
     .profileImg{
         margin-top: 70px;
         width: 300px;
@@ -108,6 +114,12 @@
         font-size: 12px; 
         transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
     }
+
+    html[lang='en'] .primaryBtn {
+        font-size: 10px; /* 영어일 경우 작은 크기 */
+        padding: 5px 5px;
+        margin-right: 10px;
+      }
     .defaultFont{
         font-size: 30px;
     }
@@ -133,6 +145,11 @@
         font-size: 10px; 
         transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out; /* 애니메이션 속성 추가 */
     }
+    html[lang='en'] .primaryBtn {
+        font-size: 8px; /* 영어일 경우 작은 크기 */
+        padding: 5px 5px;
+        margin-right: 8px;
+      }
     .defaultFont{
         font-size: 20px;
     }

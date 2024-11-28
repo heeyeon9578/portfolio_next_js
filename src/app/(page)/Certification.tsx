@@ -12,12 +12,7 @@ import Cert1 from '../images/cert1.png';
 import Cert2 from '../images/cert2.png';
 import Cert3 from '../images/cert3.png';
 const Profile: React.FC = () => {
-   {/* <Rectangle
-          startColor="#F2BED1" 
-          endColor="#8C6E79"   
-          width={50}
-          height={600}
-        /> */}
+
   const { t ,i18n} = useTranslation('common');  // 공통 번역 파일 사용
   const [isInitialized, setIsInitialized] = useState(false);
   const [cards, setCards] = useState([
@@ -61,8 +56,7 @@ const Profile: React.FC = () => {
            <div className={styles.defaultFont}>{t('certication')}</div>
          
            <Devider 
-           startColor="#F2BED1" 
-           endColor="#8C6E79" 
+
            width={1650} 
            height={5} />
            

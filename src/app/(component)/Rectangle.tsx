@@ -10,8 +10,8 @@ interface RectangleProps {
 }
 
 const Rectangle: React.FC<RectangleProps> = ({
-  startColor = '#E5B4C6',
-  endColor = '#C49AA9',
+  startColor = 'var(--secondary-color)',
+  endColor = 'var(--forth-color)',
   width = 100,
   height = 100,
   id = 'rectangle_gradient',

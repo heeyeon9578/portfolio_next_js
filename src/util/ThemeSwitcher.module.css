@@ -1,100 +1,87 @@
-.pink {
-    background-color: #f2bed1;
-    border: 0px;
-    border-radius: 50%;
+.colorPicker{
+    display: flex;
+    flex-direction: column;
+    position: absolute; /* 부모 요소를 기준으로 자식의 절대 위치 설정 */
+    right: 100%;
+    margin-right: 10px;
+}
+.size {
     width: 30px;
     height: 30px;
+    border-radius: 50%;
     cursor: pointer;
     margin: 5px;
+  }
+  
+  .pink {
+    background-color: #f2bed1;
+    border: 0px;
   }
   
   .dark {
     background-color: #1e1e2f;
     border: 0px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    margin: 5px;
   }
   
   .white {
     background-color: #ffffff;
     border: 0px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    margin: 5px;
   }
   
   .red {
     background-color: #ff6666;
     border: 0px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    margin: 5px;
   }
   
   .orange {
     background-color: #ffa552;
     border: 0px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    margin: 5px;
   }
   
   .yellow {
     background-color: #ffd700;
     border: 0px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    margin: 5px;
   }
   
   .green {
     background-color: #33cc66;
     border: 0px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    margin: 5px;
   }
   
   .blue {
     background-color: #3399ff;
     border: 0px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    margin: 5px;
   }
   
   .navy {
     background-color: #3339ff;
     border: 0px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    margin: 5px;
   }
   
   .purple {
     background-color: #9933ff;
     border: 0px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    margin: 5px;
   }
   
+  @media (max-width:1191px) {
+    .size {
+        width: 24px;
+        height: 24px;
+        margin: 4px;
+      }
+  }
+
+  @media (max-width:815px) {
+    .size {
+        width: 20px;
+        height: 20px;
+        margin: 3px;
+      }
+  }
+  @media (max-width:375px) {
+    .size {
+        width: 15px;
+        height: 15px;
+        margin: 2px;
+      }
+  }

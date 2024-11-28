@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import styles from "./ThemeSwitcher.module.css";
+import classNames from 'classnames';
 
 const ThemeSwitcher: React.FC = () => {
   const [theme, setTheme] = useState<
@@ -49,17 +50,57 @@ const ThemeSwitcher: React.FC = () => {
   }, []);
 
   return (
-    <div>
-        <button className={styles.pink} onClick={() => toggleTheme('default')} title="Default"></button>
-        <button className={styles.dark} onClick={() => toggleTheme('dark')} title="Dark"></button>
-        <button className={styles.white} onClick={() => toggleTheme('white')} title="White"></button>
-        <button className={styles.red} onClick={() => toggleTheme('red')} title="Red"></button>
-        <button className={styles.orange} onClick={() => toggleTheme('orange')} title="Orange"></button>
-        <button className={styles.yellow} onClick={() => toggleTheme('yellow')} title="Yellow"></button>
-        <button className={styles.green} onClick={() => toggleTheme('green')} title="Green"></button>
-        <button className={styles.blue} onClick={() => toggleTheme('blue')} title="Blue"></button>
-        <button className={styles.navy} onClick={() => toggleTheme('navy')} title="Navy"></button>
-        <button className={styles.purple} onClick={() => toggleTheme('purple')} title="Purple"></button>
+    <div className={styles.colorPicker}>
+      <button
+        className={classNames(styles.pink, styles.size)}
+        onClick={() => toggleTheme('default')}
+        title="Default"
+      ></button>
+      <button
+        className={classNames(styles.dark, styles.size)}
+        onClick={() => toggleTheme('dark')}
+        title="Dark"
+      ></button>
+      <button
+        className={classNames(styles.white, styles.size)}
+        onClick={() => toggleTheme('white')}
+        title="White"
+      ></button>
+      <button
+        className={classNames(styles.red, styles.size)}
+        onClick={() => toggleTheme('red')}
+        title="Red"
+      ></button>
+      <button
+        className={classNames(styles.orange, styles.size)}
+        onClick={() => toggleTheme('orange')}
+        title="Orange"
+      ></button>
+      <button
+        className={classNames(styles.yellow, styles.size)}
+        onClick={() => toggleTheme('yellow')}
+        title="Yellow"
+      ></button>
+      <button
+        className={classNames(styles.green, styles.size)}
+        onClick={() => toggleTheme('green')}
+        title="Green"
+      ></button>
+      <button
+        className={classNames(styles.blue, styles.size)}
+        onClick={() => toggleTheme('blue')}
+        title="Blue"
+      ></button>
+      <button
+        className={classNames(styles.navy, styles.size)}
+        onClick={() => toggleTheme('navy')}
+        title="Navy"
+      ></button>
+      <button
+        className={classNames(styles.purple, styles.size)}
+        onClick={() => toggleTheme('purple')}
+        title="Purple"
+      ></button>
     </div>
 
   );

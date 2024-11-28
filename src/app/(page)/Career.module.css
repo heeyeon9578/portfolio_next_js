@@ -627,6 +627,7 @@
     .blogDetail2{
         max-width: 90%;
         font-size: 5px;
+        margin-top: 0px;
     }
     .gitAndNotion{
         display: flex;

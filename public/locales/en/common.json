@@ -4,16 +4,20 @@
     "guestbook": "Guestbook",
     "certifications": "Certifications",
     "experience": "Experience",
+    "awards":"Awards",
     "email": "Email",
-    "intro_part1": "I am a",
-    "intro_part2": "Frontend Engineer",
-    "intro_part3": "Heeyeon Choi, who loves documenting.",
+
+    "intro_part1": "I am",
+    "intro_part2": "Heeyeon Choi",
+    "intro_part3": "and I love challenges.",
+
     "profile_sentence_1": "I majored in Computer Science and nurtured my dream of becoming a developer. Throughout various development experiences, I set a goal to grow as a frontend engineer.",
     "profile_sentence_2": "While working at ‘Jenosoft’, I was introduced to frontend tasks by chance, and this sparked a deeper interest in frontend development, leading me to start self-study.",
     "profile_sentence_3": "I learned frontend technologies such as JavaScript, TypeScript, and React, and gained project experience by collaborating with a backend engineer on a 'blog' project.",
-    "profile_sentence_4": "In addition, I conducted an 8-month-long study group based on the book 'JavaScript Deep Dive' to gain a deeper understanding of JavaScript. By recruiting and learning together with study members, I was able to solidify my foundation in JavaScript.",
+    "profile_sentence_4": "In addition, I conducted an 8-month-long study group based on the book 'JavaScript Deep Dive' to gain a deeper understanding of JavaScript.",
     "profile_sentence_5": "With the knowledge and skills I acquired through these projects and studies, I aim to contribute to real-world projects in the industry.",
-     "web": "web",
+    
+    "web": "web",
     "game":"game",
     "blogDetail": "This is a user-centered blog platform designed to allow people to share thoughts and stories through comments and posts, while easily managing user profiles and posts.",
     "geugol": "GeuGol",
@@ -21,7 +25,9 @@
     "portFolio":"PortFolio",
     "portFolioDetail":"This website introduces Heeyeon Choi, showcasing her career, skills, certifications, and portfolio. Users can send an email directly, and the site also supports themes and multiple languages.",
     "helloGachonDetail":"This is a nurturing and story guide game designed for freshmen in Computer Science at Gachon University. It was developed to help students from the COVID era, who had difficulty accessing departmental information and participating in various events.",
+    
     "certication":"Certication",
+    
     "career":"Career",
     "company1":"b2en",
     "company2":"Jenosoft",
@@ -29,11 +35,13 @@
     "GyoJungDetail": "It retrieves real-time location and transportation information from the server, displays it on a map.",
     "maskRcnn": "Using First-person perspective pedestrian video data, semantic segmentation tasks were performed.",
     "CMS": "CMS",
-    "CMSDetail": "A web service by Jenos Soft designed to manage client companies, delivery information, and products. It records information about products delivered by Jenos Soft and tracks how and where these products are used by client companies. It also provides role-based management by assigning distinct permissions to client companies, Jenos Soft engineers, and partner companies.",
+    "CMSDetail": "A web service by Jenos Soft for managing clients, deliveries, and products. It tracks product usage and provides role-based access for clients, engineers, and partners.",
     "TliveGCS": "Developed a notification feature for the T live GCS product that sends messages with images to administrators or workers when AI detects a fire. Additionally, implemented a drone log feature to systematically view and manage drone activity logs.",
-    "awards":"Awards",
+    
+    
     "majubom": "Majubom",
-    "majubomDetail": "A platform that provides educational counseling and information for multicultural family adolescents or foreign adolescents living in Korea.",
+    "majubomDetail": "A platform offering educational support for multicultural and foreign adolescents in Korea.",
+    
     "writeEmail": "Please enter your email address.",
     "writeEmailSubject": "Please enter the email subject.",
     "writeEmailContent": "Please enter the email content.",
@@ -49,5 +57,6 @@
     "vs":"Verification successful!",
     "ic":"Invalid code!",
     "es":"Entry saved!",
-    "ftse":"Failed to save entry."
+    "ftse":"Failed to save entry.",
+    "loading":"loading"
   }

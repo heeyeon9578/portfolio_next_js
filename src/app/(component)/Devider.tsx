@@ -8,8 +8,8 @@ interface DeviderProps {
 }
 
 const Devider: React.FC<DeviderProps> = ({
-  startColor = '#F2BED1',
-  endColor = '#8C6E79',
+  startColor = 'var(--secondary-color)',
+  endColor = 'var(--forth-color)',
   width = 972,
   height = 4,
 }) => (

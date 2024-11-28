@@ -106,8 +106,7 @@ const GuestBook: React.FC = () => {
         <div className={styles.defaultFont}>{t('guestbook')}</div>
 
         <Devider
-          startColor="#F2BED1"
-          endColor="#8C6E79"
+
           width={1650}
           height={5}
         />
@@ -156,7 +155,7 @@ const GuestBook: React.FC = () => {
           </button>
         </div>
       )}
-      <div>
+      <div className={styles.entriesAll}>
         <h2>{t('list')}</h2>
         <div className={styles.entries}>
           {entries.map((entry, index) => (

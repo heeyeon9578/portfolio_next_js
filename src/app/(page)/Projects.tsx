@@ -151,8 +151,6 @@ const Projects: React.FC = () => {
         <div>
            <div className={styles.defaultFont}>{t('projects')}</div>
            <Devider 
-           startColor="#F2BED1" 
-           endColor="#8C6E79" 
            width={1650} 
            height={5} />
         </div>

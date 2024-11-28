@@ -15,7 +15,7 @@ const Email: React.FC = () => {
     message: '',
   });
   const [status, setStatus] = useState<string | null>(null);
-
+  const [loading, setLoading] = useState(false); // 로딩 상태 추가
   useEffect(() => {
     if (i18n.isInitialized) {
       setIsInitialized(true);
@@ -40,6 +40,7 @@ const Email: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus(null); // 상태 초기화
+    setLoading(true); // 로딩 시작
 
     try {
       const response = await fetch('/api/send-email', {
@@ -58,6 +59,8 @@ const Email: React.FC = () => {
     } catch (error) {
       console.error(error);
       setStatus('An unexpected error occurred. Please try again later.');
+    }finally {
+      setLoading(false); // 로딩 종료
     }
   };
 
@@ -65,7 +68,7 @@ const Email: React.FC = () => {
     <div className={styles.profilePage}>
       <div>
         <div className={styles.defaultFont}>{t('email')}</div>
-        <Devider startColor="#F2BED1" endColor="#8C6E79" width={1650} height={5} />
+        <Devider width={1650} height={5} />
       </div>
 
       <form className={styles.emailForm} onSubmit={handleSubmit}>
@@ -95,10 +98,11 @@ const Email: React.FC = () => {
           required
           className={styles.textarea}
         />
-        <button type="submit" className={styles.submitButton}>
-         {t('sendEmail')}
+        <button type="submit" className={styles.submitButton} disabled={loading}>
+          {loading ? t('sending') : t('sendEmail')} {/* 로딩 상태에 따라 버튼 텍스트 변경 */}
         </button>
       </form>
+      {loading && <div className={styles.loader}>{t('loading')}</div>} {/* 로딩 메시지 */}
       {status && <div className={styles.statusMessage}>{status}</div>}
     </div>
   );

@@ -1,0 +1,41 @@
+.btns{
+    display: flex;
+    flex-direction: column;
+    position: absolute; /* 부모 요소를 기준으로 자식의 절대 위치 설정 */
+    right: 100%;
+    gap:10px;
+    margin-right: 10px;
+}
+
+.primaryBtn{
+    white-space: nowrap; /* 텍스트를 한 줄로 유지 */
+    background-color:var(--secondary-color);
+    border: none;
+    border-radius:15px;
+    color: var(--text-color);
+    font-size: 15px; 
+    padding: 10px 20px;
+}
+
+@media (max-width:1191px) {
+    .primaryBtn{
+        border-radius:12px;
+        font-size: 12px; 
+        padding: 8px 18px;
+    }
+  }
+
+  @media (max-width:815px) {
+    .primaryBtn{
+        border-radius:12px;
+        font-size: 12px; 
+        padding: 8px 12px;
+    }
+  }
+  @media (max-width:375px) {
+    .primaryBtn{
+        border-radius:12px;
+        font-size: 8px; 
+        padding: 5px 10px;
+    }
+  }

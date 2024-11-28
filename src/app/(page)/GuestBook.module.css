@@ -89,7 +89,9 @@
     font-weight: bold;
     border: 1px solid var(--third-color);
   }
-  
+  .entriesAll{
+    width: 100%;
+  }
   .entries {
     width: 100%;
     margin-top: 20px;
@@ -112,6 +114,7 @@
   .entryContent {
     font-size: 14px;
     color: var(--text-color);
+    width: 100%;
   }
   
   .entryMeta {

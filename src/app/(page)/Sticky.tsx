@@ -6,8 +6,12 @@ import colorPicker from '../images/colorPickrer.png';
 import github from '../images/github.png';
 import tistory from '../images/tistory.png';
 import notion from '../images/notion.png';
-import download from '../images/download.png';
-import goUp from '../images/goUp.png'
+import Download from '../(component)/Download';
+import GoUp from '../(component)/GoUp';
+import Menu from '../(component)/Menu';
+import Menus from '../(component)/Menus';
+// import download from '../images/download.png';
+// import goUp from '../images/goUp.png'
 import '../../../i18n'
 import { useTranslation } from 'react-i18next';
 import ThemeSwitcher from '@/util/ThemeSwitcher';
@@ -20,7 +24,7 @@ const Sticky: React.FC<StickyPageProps> = ({ scrollTo }) => {
   const { i18n } = useTranslation('common');
   const [showColors, setShowColors] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
-  
+  const [showMenu, setShowMenu] = useState(false);
   useEffect(() => {
     if (i18n.isInitialized) {
       setIsInitialized(true);
@@ -66,14 +70,22 @@ const Sticky: React.FC<StickyPageProps> = ({ scrollTo }) => {
   }
   return (
     <div className={styles.sticky}>
-
+        <div className={styles.colors}>
+          {showMenu &&(<Menus scrollTo={scrollTo}></Menus>)}
+          <div onClick={()=>setShowMenu(!showMenu)}>
+            <Menu width={50} height={50} className={styles.colorPicker}/>
+          </div>
+        </div>
         <div className={styles.circle} onClick={toggleLanguage}>
           {i18n.language === 'en' ? '한' : 'En'}
         </div>
+       <div className={styles.colors}>
+       {showColors && (<ThemeSwitcher />)}
         <div className={styles.circle} onClick={()=> setShowColors(!showColors)}>
-        {showColors && (<ThemeSwitcher />)}
           <Image src={colorPicker} className={styles.colorPicker} alt='colorPicker'></Image>
         </div>
+        
+       </div>
         <div className={styles.circle} onClick={goToGithub}>
           <Image src={github} className={styles.colorPicker} alt='github'></Image>
         </div>
@@ -84,10 +96,10 @@ const Sticky: React.FC<StickyPageProps> = ({ scrollTo }) => {
           <Image src={notion} className={styles.colorPicker} alt='notion'></Image>
         </div>
         <div className={styles.download} onClick={downloadResume}>
-          <Image src={download} className={styles.colorPicker} alt='download'></Image>
+          <Download width={50} height={50} className={styles.colorPicker}/>
         </div>
         <div className={styles.download} onClick={()=>scrollTo('main')}>
-          <Image src={goUp} className={styles.colorPicker} alt='goUp'></Image>
+          <GoUp width={50} height={50} className={styles.colorPicker}/>
         </div>
       </div>
   );

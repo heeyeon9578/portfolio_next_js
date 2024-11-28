@@ -115,32 +115,27 @@ const projects = [
            <div className={styles.defaultFont}>{t('career')}</div>
          
            <Devider 
-           startColor="#F2BED1" 
-           endColor="#8C6E79" 
            width={1650} 
            height={5} />
            
         </div>
         <div className={styles.career}>
             <Rectangle
-              startColor="#F2BED1" 
-              endColor="#8C6E79"   
+
               width={3}
               height={884}
               className={styles.year}
 
             />
             <Rectangle
-              startColor="#F2BED1" 
-              endColor="#8C6E79"   
+
               width={30}
               height={340}
               className={styles.smallYear}
             />
 
             <Rectangle
-              startColor="#F2BED1" 
-              endColor="#8C6E79"   
+
               width={30}
               height={340}
               className={styles.smallYear2}
