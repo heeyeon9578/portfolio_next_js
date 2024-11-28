@@ -7,23 +7,101 @@
     --text-color: #3E4149;
     --shadow-color: #F2789F;
   }
-  .theme-dark {
-    --primary-color: #1E1E2F;
-    --secondary-color: #2D2D44;
-    --third-color: #4B4B6A;
-    --forth-color: #6A6A8A;
-    --background-color: #121212;
-    --text-color: #FFFFFF;
-    --shadow-color: #444466;
-  }
-  
-  .theme-blue {
-    --primary-color: #E8F0FE;
-    --secondary-color: #BED2F2;
-    --third-color: #709DED;
-    --forth-color: #6E799C;
-    --background-color: #F5F9FF;
-    --text-color: #243B53;
-    --shadow-color: #729BEB;
-  }
-  
+/* Dark Theme */
+.theme-dark {
+  --primary-color: #1e1e2f;
+  --secondary-color: #2d2d44;
+  --third-color: #4b4b6a;
+  --forth-color: #6a6a8a;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --shadow-color: #444466;
+}
+
+/* White Theme */
+.theme-white {
+  --primary-color: #ffffff;
+  --secondary-color: #e0e0e0;
+  --third-color: #c0c0c0;
+  --forth-color: #a0a0a0;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --shadow-color: #d0d0d0;
+}
+
+/* Red Theme */
+.theme-red {
+  --primary-color: #ffe8e8;
+  --secondary-color: #ffb3b3;
+  --third-color: #ff6666;
+  --forth-color: #cc3333;
+  --background-color: #fff5f5;
+  --text-color: #660000;
+  --shadow-color: #ff9999;
+}
+
+/* Orange Theme */
+.theme-orange {
+  --primary-color: #fff4e5;
+  --secondary-color: #ffd2a3;
+  --third-color: #ffa552;
+  --forth-color: #cc7a3a;
+  --background-color: #fff9f0;
+  --text-color: #663300;
+  --shadow-color: #ffb27f;
+}
+
+/* Yellow Theme */
+.theme-yellow {
+  --primary-color: #fffee5;
+  --secondary-color: #ffeb99;
+  --third-color: #ffd700;
+  --forth-color: #ccac00;
+  --background-color: #fffff0;
+  --text-color: #665500;
+  --shadow-color: #ffe066;
+}
+
+/* Green Theme */
+.theme-green {
+  --primary-color: #e5ffe8;
+  --secondary-color: #99ffb3;
+  --third-color: #33cc66;
+  --forth-color: #2a9952;
+  --background-color: #f0fff5;
+  --text-color: #003300;
+  --shadow-color: #66ff99;
+}
+
+/* Blue Theme */
+.theme-blue {
+  --primary-color: #e5f4ff;
+  --secondary-color: #99ccff;
+  --third-color: #3399ff;
+  --forth-color: #267acc;
+  --background-color: #f0f9ff;
+  --text-color: #003366;
+  --shadow-color: #66b2ff;
+}
+
+/* Navy Theme */
+.theme-navy {
+  --primary-color: #e5e8ff;
+  --secondary-color: #99a3ff;
+  --third-color: #3339ff;
+  --forth-color: #262bcc;
+  --background-color: #f0f2ff;
+  --text-color: #000066;
+  --shadow-color: #666bff;
+}
+
+/* Purple Theme */
+.theme-purple {
+  --primary-color: #f4e5ff;
+  --secondary-color: #d499ff;
+  --third-color: #9933ff;
+  --forth-color: #732acc;
+  --background-color: #f9f0ff;
+  --text-color: #330066;
+  --shadow-color: #b366ff;
+}
