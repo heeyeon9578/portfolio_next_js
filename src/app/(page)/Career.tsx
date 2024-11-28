@@ -86,7 +86,7 @@ const projects = [
         
         switch(whatKind){
           case GyoJung :
-            window.open(`http://116.124.172.134:9092/login`, '_blank');
+            window.open(``, '_blank');
             break;
             case TLiveGCS :
               window.open(`https://www.tlivecaster.com/#/product/video_monitoring`, '_blank');

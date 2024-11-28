@@ -6,15 +6,15 @@ import classNames from 'classnames';
 
 const ThemeSwitcher: React.FC = () => {
   const [theme, setTheme] = useState<
-    'default' | 'dark' | 'white' | 'red' | 'orange' | 'yellow' | 'green' | 'blue' | 'navy' | 'purple'
-  >('default');
+    'white' | 'pink' | 'dark' | 'red' | 'orange' | 'yellow' | 'green' | 'blue' | 'navy' | 'purple'
+  >('white'); // 디폴트를 화이트로 설정
 
   // 테마 변경 함수
   const toggleTheme = (
     newTheme:
-      | 'default'
-      | 'dark'
       | 'white'
+      | 'pink'
+      | 'dark'
       | 'red'
       | 'orange'
       | 'yellow'
@@ -25,7 +25,7 @@ const ThemeSwitcher: React.FC = () => {
   ) => {
     setTheme(newTheme);
     document.documentElement.className = ''; // 기존 테마 제거
-    if (newTheme !== 'default') {
+    if (newTheme !== 'white') { // 화이트를 디폴트로 설정
       document.documentElement.classList.add(`theme-${newTheme}`);
     }
     localStorage.setItem('theme', newTheme); // 테마 상태를 로컬에 저장
@@ -34,9 +34,9 @@ const ThemeSwitcher: React.FC = () => {
   // 저장된 테마 불러오기
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as
-      | 'default'
-      | 'dark'
       | 'white'
+      | 'pink'
+      | 'dark'
       | 'red'
       | 'orange'
       | 'yellow'
@@ -52,19 +52,19 @@ const ThemeSwitcher: React.FC = () => {
   return (
     <div className={styles.colorPicker}>
       <button
+        className={classNames(styles.white, styles.size)}
+        onClick={() => toggleTheme('white')}
+        title="White"
+      ></button>
+      <button
         className={classNames(styles.pink, styles.size)}
-        onClick={() => toggleTheme('default')}
-        title="Default"
+        onClick={() => toggleTheme('pink')}
+        title="Pink"
       ></button>
       <button
         className={classNames(styles.dark, styles.size)}
         onClick={() => toggleTheme('dark')}
         title="Dark"
-      ></button>
-      <button
-        className={classNames(styles.white, styles.size)}
-        onClick={() => toggleTheme('white')}
-        title="White"
       ></button>
       <button
         className={classNames(styles.red, styles.size)}
@@ -102,7 +102,6 @@ const ThemeSwitcher: React.FC = () => {
         title="Purple"
       ></button>
     </div>
-
   );
 };
 

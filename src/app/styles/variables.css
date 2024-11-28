@@ -1,12 +1,25 @@
+/* 기본 테마 (화이트) */
 :root {
-    --primary-color: #F8E8EE;
-    --secondary-color: #F2BED1;
-    --third-color: #ED709D;
-    --forth-color: #8C6E79;
-    --background-color: #F9F5F6;
-    --text-color: #3E4149;
-    --shadow-color: #F2789F;
-  }
+  --primary-color: #f4f4f4;
+  --secondary-color: #e6e6e6;
+  --third-color: #a6a5a5;
+  --forth-color: #898989;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --shadow-color: #afadad;
+}
+
+/* Pink Theme */
+.theme-pink {
+  --primary-color: #F8E8EE;
+  --secondary-color: #F2BED1;
+  --third-color: #ED709D;
+  --forth-color: #8C6E79;
+  --background-color: #F9F5F6;
+  --text-color: #3E4149;
+  --shadow-color: #F2789F;
+}
+
 /* Dark Theme */
 .theme-dark {
   --primary-color: #1e1e2f;
@@ -17,7 +30,6 @@
   --text-color: #ffffff;
   --shadow-color: #444466;
 }
-
 /* White Theme */
 .theme-white {
   --primary-color: #ffffff;

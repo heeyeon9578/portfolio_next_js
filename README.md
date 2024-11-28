@@ -41,37 +41,26 @@
 ---
 
 ## ⚙ 기술 스택
-
 <table>
-        <tr>
-            <th>분류</th>
-            <th>스택</th>
-        </tr>
-        <tr>
-            <td><strong>Frontend</strong></td>
-            <td>
+    <tr>
+        <th>분류</th>
+        <th>스택</th>
+    </tr>
+    <tr>
+        <td><strong>Frontend</strong></td>
+        <td>
             <img src="https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=typescript&logoColor=white" alt="TypeScript">
-                <img src="https://img.shields.io/badge/React-61DAFB?style=plastic&logo=react&logoColor=white" alt="React">
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Backend</strong></td>
-            <td>
-            <img src="https://img.shields.io/badge/TypeScript-3178C6?style=plastic&logo=typescript&logoColor=white" alt="TypeScript">
-                <img src="https://img.shields.io/badge/Node.js-43853D?style=plastic&logo=node.js&logoColor=white" alt="Node.js">
-                <img src="https://img.shields.io/badge/Express.js-404D59?style=plastic&logo=express&logoColor=white" alt="Express">
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Database</strong></td>
-            <td>
-                <img src="https://img.shields.io/badge/MariaDB-003545?style=plastic&logo=mariadb&logoColor=white" alt="MariaDB">
-                <img src="https://img.shields.io/badge/Redis-DC382D?style=plastic&logo=redis&logoColor=white" alt="Redis">
-                <img src="https://img.shields.io/badge/MongoDB-47A248?style=plastic&logo=mongodb&logoColor=white" alt="MongoDB">
-                <img src="https://img.shields.io/badge/AWS%20S3-FF9900?style=plastic&logo=amazon-s3&logoColor=white" alt="AWS S3">
-            </td>
-        </tr>
-  </table>
+            <img src="https://img.shields.io/badge/React-61DAFB?style=plastic&logo=react&logoColor=white" alt="React">
+            <img src="https://img.shields.io/badge/Next.js-000000?style=plastic&logo=next.js&logoColor=white" alt="Next.js">
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Database</strong></td>
+        <td>
+            <img src="https://img.shields.io/badge/MongoDB-47A248?style=plastic&logo=mongodb&logoColor=white" alt="MongoDB">
+        </td>
+    </tr>
+</table>
 
 
 ---
