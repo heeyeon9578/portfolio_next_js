@@ -6,9 +6,11 @@ import { useTranslation } from 'react-i18next';
 import Devider from '../(component)/Devider';
 import blogProject from '../images/blogProject.png';
 import profileImg from '../images/profileImg.png';
+import stellarlinkImg from '../images/stellarlink.png';
 import geugol from '../images/geugol.png';
 import dashBoard from '../images/dashboardPage.png';
 import portFolioImg from '../images/portFolioImg.png';
+import stellarLinkMain from '../images/stellarLinkMain.png';
 import geuGolImg from '../images/geugolImg.png';
 import helloGachonImg from '../images/helloGachon.png';
 import helloGachonMarkImg from '../images/helloGachonMark.png';
@@ -26,12 +28,17 @@ import unityImg from  '../images/unity.png';
 import nextJSImg from '../images/nextJS.png';
 import mongDBImg from '../images/mongoDB.png';
 import cSharpImg from '../images/csharp.png';
+import ec2Img from '../images/ec2.png';
+import s3Img from '../images/s3.png';
+import reduxImg from '../images/redux.png';
+import tailwindCssImg from '../images/tailwind.png';
 
 const Projects: React.FC = () => {
   const { t } = useTranslation('common');  // 공통 번역 파일 사용
   const blogPj = 'blogProject';
   const geugolPj = 'geugol';
   const portFolio = 'portFolio';
+  const stellarLink = 'stellarLink';
   const helloGachon ='printf(”helloGachon!”)';
   const web = t('web');  // 웹 부분의 번역 추가
   const game = t('game');    // 게임 부분의 번역 추가
@@ -101,6 +108,9 @@ const Projects: React.FC = () => {
     window.open('https://heeyeonportfolio.vercel.app/', '_blank');
   };
 
+  const goToStellarLink = () =>{
+    window.open('https://stellar-link.org/', '_blank');
+  };
   // 새로운 창에서 GitHub 페이지 열기
   const goToGithub = (whatKind : string) => {
 
@@ -116,6 +126,9 @@ const Projects: React.FC = () => {
         break;
       case helloGachon:
         window.open(`https://github.com/heeyeon9578/HelloGachon`, '_blank');
+        break;
+      case stellarLink:
+        window.open(`https://github.com/heeyeon9578/Stellar-Link`, '_blank');
         break;
       default:
         window.open(`https://github.com/heeyeon9578/`, '_blank');
@@ -138,6 +151,9 @@ const Projects: React.FC = () => {
         break;
       case helloGachon:
         window.open(`https://heeyeon9578.notion.site/printf-helloGachon-e14f9740ae474faf99c12aa9c8e35cdb?pvs=4`, '_blank');
+        break;
+      case stellarLink:
+        window.open(`https://heeyeon9578.notion.site/StellarLink-24-11-29-24-02-12-14caccb87c2b80bba05bf00fa9a970f4`, '_blank');
         break;
       default:
         window.open(`http://heeyeon9578.notion.site/`, '_blank');
@@ -171,7 +187,10 @@ const Projects: React.FC = () => {
             </div>
             <div className={`${styles.project} ${selectedProject === portFolio ? styles.active : ''}`} onClick={()=>changeProject(portFolio)}>
               <Image src={profileImg} alt='profileImg-project' className={styles.projectImg} priority></Image>
-            </div>            
+            </div>      
+            <div className={`${styles.project} ${selectedProject === stellarLink ? styles.active : ''}`} onClick={()=>changeProject(stellarLink)}>
+              <Image src={stellarlinkImg} alt='profileImg-project' className={styles.projectImg} priority></Image>
+            </div>         
           </div>
 
           <div className={`${styles.detail} animate__animated ${animationClass}`}>
@@ -243,6 +262,38 @@ const Projects: React.FC = () => {
                <Image src={portFolioImg} className={styles.projectDetail} onClick={goToPortFolio} alt='portFolio'></Image>
                <span className={styles.blog} onClick={goToPortFolio}>{t('portFolio')}</span>
                <span className={styles.blogDetail}>{t('portFolioDetail')}</span>
+             </div>
+
+             <div className={styles.gitAndNotion}>
+               <div className={styles.circle} onClick={()=>goToGithub(project)}>
+                 <Image src={github} className={styles.github} alt='github'></Image>
+               </div>
+               <div className={styles.circle} onClick={()=>goToNotion(project)}>
+                 <Image src={notion} className={styles.github} alt='notion'></Image>
+               </div>
+             </div>
+             
+           </div>
+            )}  
+
+            {project === stellarLink &&(
+             <div className={styles.detailAll}>
+
+             <div className={styles.imgAndName}>
+              <div className={styles.skills}>
+                <Image src={reactImg} className={styles.github} alt="reactImg"></Image>
+                <Image src={typescriptImg} className={styles.github} alt="typescriptImg"></Image>
+                <Image src={htmlJSCssImg} className={styles.github} alt="htmlJSCssImg"></Image>
+                <Image src={nextJSImg} className={styles.github} alt="nextJSImg"></Image>
+                <Image src={mongDBImg} className={styles.github} alt="mongDBImg"></Image>
+                <Image src={ec2Img} className={styles.github} alt="ec2Img"></Image>
+                <Image src={s3Img} className={styles.github} alt="s3Img"></Image>
+                <Image src={reduxImg} className={styles.github} alt="reduxImg"></Image>
+                <Image src={tailwindCssImg} className={styles.github} alt="tailwindCssImg"></Image>
+              </div>
+               <Image src={stellarLinkMain} className={styles.projectDetail} onClick={goToStellarLink} alt='portFolio'></Image>
+               <span className={styles.blog} onClick={goToPortFolio}>{t('Stellar Link')}</span>
+               <span className={styles.blogDetail}>{t('stellarLinkDetail')}</span>
              </div>
 
              <div className={styles.gitAndNotion}>
