@@ -32,6 +32,8 @@ import ec2Img from '../images/ec2.png';
 import s3Img from '../images/s3.png';
 import reduxImg from '../images/redux.png';
 import tailwindCssImg from '../images/tailwind.png';
+import socketioImg from '../images/socketio.png';
+import reactThreeFiberimg from '../images/reactthreefiber.png';
 
 const Projects: React.FC = () => {
   const { t } = useTranslation('common');  // 공통 번역 파일 사용
@@ -290,6 +292,8 @@ const Projects: React.FC = () => {
                 <Image src={s3Img} className={styles.github} alt="s3Img"></Image>
                 <Image src={reduxImg} className={styles.github} alt="reduxImg"></Image>
                 <Image src={tailwindCssImg} className={styles.github} alt="tailwindCssImg"></Image>
+                <Image src={socketioImg} className={styles.github} alt="socketioImg"></Image>
+                <Image src={reactThreeFiberimg} className={styles.github} alt="reactThreeFiberimg"></Image>
               </div>
                <Image src={stellarLinkMain} className={styles.projectDetail} onClick={goToStellarLink} alt='portFolio'></Image>
                <span className={styles.blog} onClick={goToPortFolio}>{t('Stellar Link')}</span>
