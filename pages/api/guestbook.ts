@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import clientPromise from '@/util/database';
+import getClient from '@/util/database';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const client = await clientPromise;
+  const client = await getClient();
   const db = client.db('guestbook');
   const collection = db.collection('entries');
 

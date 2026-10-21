@@ -1,17 +1,13 @@
 import { MongoClient } from 'mongodb';
-
-const uri = process.env.MONGODB_URI as string; // 환경 변수 설정 필요
-const options = {};
-
-let client: MongoClient;
-let clientPromise: Promise<MongoClient>;
-
-if (!process.env.MONGODB_URI) {
-
-  throw new Error('Please add your MongoDB URI to .env.local');
+let clientPromise: Promise<MongoClient> | undefined;
+export default function getClient(): Promise<MongoClient> {
+  if (!clientPromise) {
+    const uri = process.env.MONGODB_URI;
+    if (!uri) throw new Error('MONGODB_URI is required for guestbook requests.');
+    clientPromise = new MongoClient(uri).connect().catch(error => {
+      clientPromise = undefined;
+      throw error;
+    });
+  }
+  return clientPromise;
 }
-
-client = new MongoClient(uri, options);
-clientPromise = client.connect();
-
-export default clientPromise;

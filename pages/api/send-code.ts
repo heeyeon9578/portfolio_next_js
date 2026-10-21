@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import clientPromise from '@/util/database';
+import getClient from '@/util/database';
 import { sendVerificationEmail } from '@/util/sendEmail';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const expiresAt = new Date(Date.now() + 10 * 60 * 1000); // 10분 유효
 
     try {
-      const client = await clientPromise;
+      const client = await getClient();
       const db = client.db('guestbook');
       const collection = db.collection('verificationCodes');
 

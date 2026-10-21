@@ -1,24 +1,15 @@
-// i18n.js
-"use client";
-
+'use client';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import HttpBackend from 'i18next-http-backend'; // 백엔드 플러그인 추가
-import { i18n as i18nConfig } from './next-i18next.config';
-
-i18n
-  .use(HttpBackend) // 백엔드 플러그인 추가
-  .use(initReactI18next)
-  .init({
-    ...i18nConfig,
-    fallbackLng: 'ko',
-    debug: process.env.NODE_ENV === 'development',
-    interpolation: {
-      escapeValue: false, // React는 XSS 보호가 기본 적용되므로 설정하지 않음
-    },
-    backend: {
-      loadPath: '/locales/{{lng}}/common.json', // 번역 파일 경로 설정
-    },
+import ko from './public/locales/ko/common.json';
+import en from './public/locales/en/common.json';
+if (!i18n.isInitialized) {
+  i18n.use(initReactI18next).init({
+    resources: { ko: { common: ko }, en: { common: en } },
+    lng: 'ko', fallbackLng: 'ko', supportedLngs: ['ko', 'en'],
+    ns: ['common'], defaultNS: 'common',
+    interpolation: { escapeValue: false },
+    initImmediate: false,
   });
-
+}
 export default i18n;
